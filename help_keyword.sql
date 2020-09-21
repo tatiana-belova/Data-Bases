@@ -1,3 +1,8 @@
+Ознакомьтесь более подробно с документацией утилиты mysqldump. Создайте дамп единственной таблицы help_keyword базы данных mysql. 
+Причем добейтесь того, чтобы дамп содержал только первые 100 строк таблицы.
+
+X:\SQL\bin>mysqldump --where="true limit 100" mysql help_keyword > help_keyword.sql
+
 -- MySQL dump 10.13  Distrib 8.0.21, for Win64 (x86_64)
 --
 -- Host: localhost    Database: mysql
