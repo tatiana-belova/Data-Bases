@@ -1,0 +1,14 @@
+Создайте дамп базы данных example из предыдущего задания, разверните содержимое дампа в новую базу данных sample.
+
+X:\SQL\bin>mysqldump -uroot -p example > dump_example.sql
+Enter password: **** #создание дампа базы данных example
+
+X:\SQL\bin>mysql #переход в режим mysql
+
+mysql> create database sample; #создание новой базы данных sample
+Query OK, 1 row affected (0.01 sec)
+
+mysql> quit
+
+X:\SQL\bin>mysql -uroot -p sample < dump_example.sql 
+Enter password: **** #развертка содержимое дампа в новую базу данных sample
