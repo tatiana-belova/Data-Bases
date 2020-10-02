@@ -1022,58 +1022,1523 @@ name='Ольга',surname='Кумачова',email='olga568@mail.ru',phone='7954
 -- INSERT ... select
 insert communities
 select * from snet1.communities;
+Query OK, 100 rows affected (0.01 sec)
 
 insert communities (name)
 select name from snet1.communities;
+Records: 100  Duplicates: 0  Warnings: 0
 
 -- select
 select * from communities;
++-----+----------------------------------------------------------+
+| id  | name                                                     |
++-----+----------------------------------------------------------+
+|  75 | Automated 4thgeneration matrix                           |
+| 101 | Automated 4thgeneration matrix                           |
+|   5 | Business-focused object-oriented implementation          |
+| 102 | Business-focused object-oriented implementation          |
+|  58 | Centralized high-level hub                               |
+| 103 | Centralized high-level hub                               |
+|  41 | Centralized radical complexity                           |
+| 104 | Centralized radical complexity                           |
+|  51 | Cloned exuding time-frame                                |
+| 105 | Cloned exuding time-frame                                |
+|  12 | Configurable object-oriented task-force                  |
+| 106 | Configurable object-oriented task-force                  |
+|  63 | Cross-group value-added alliance                         |
+| 107 | Cross-group value-added alliance                         |
+|  55 | Cross-platform fault-tolerant framework                  |
+| 108 | Cross-platform fault-tolerant framework                  |
+|  24 | Customer-focused systematic solution                     |
+| 109 | Customer-focused systematic solution                     |
+|  53 | De-engineered exuding info-mediaries                     |
+| 110 | De-engineered exuding info-mediaries                     |
+|  40 | Decentralized zerotolerance analyzer                     |
+| 111 | Decentralized zerotolerance analyzer                     |
+|  42 | Distributed multi-tasking circuit                        |
+| 112 | Distributed multi-tasking circuit                        |
+|  18 | Distributed responsive extranet                          |
+| 113 | Distributed responsive extranet                          |
+|  59 | Diverse foreground hub                                   |
+| 114 | Diverse foreground hub                                   |
+|  60 | Diverse radical ability                                  |
+| 115 | Diverse radical ability                                  |
+|  22 | Diverse systematic structure                             |
+| 116 | Diverse systematic structure                             |
+|  94 | Down-sized mobile matrices                               |
+| 117 | Down-sized mobile matrices                               |
+| 100 | Down-sized non-volatile focusgroup                       |
+| 118 | Down-sized non-volatile focusgroup                       |
+|  79 | Enhanced 4thgeneration workforce                         |
+| 119 | Enhanced 4thgeneration workforce                         |
+|  84 | Enterprise-wide 24hour instructionset                    |
+| 120 | Enterprise-wide 24hour instructionset                    |
+|  86 | Enterprise-wide client-server utilisation                |
+| 121 | Enterprise-wide client-server utilisation                |
+|  65 | Enterprise-wide stable attitude                          |
+| 122 | Enterprise-wide stable attitude                          |
+|  26 | Expanded logistical hierarchy                            |
+| 123 | Expanded logistical hierarchy                            |
+|  89 | Expanded responsive groupware                            |
+| 124 | Expanded responsive groupware                            |
+|  31 | Extended clear-thinking collaboration                    |
+| 125 | Extended clear-thinking collaboration                    |
+|  68 | Extended dedicated access                                |
+| 126 | Extended dedicated access                                |
+|  88 | Extended local GraphicInterface                          |
+| 127 | Extended local GraphicInterface                          |
+|  52 | Facetoface web-enabled moderator                         |
+| 128 | Facetoface web-enabled moderator                         |
+|  62 | Front-line discrete product                              |
+| 129 | Front-line discrete product                              |
+|  73 | Front-line maximized localareanetwork                    |
+| 130 | Front-line maximized localareanetwork                    |
+|  44 | Fully-configurable responsive moratorium                 |
+| 131 | Fully-configurable responsive moratorium                 |
+|  30 | Fully-configurable tangible implementation               |
+| 132 | Fully-configurable tangible implementation               |
+|  97 | Function-based 5thgeneration model                       |
+| 133 | Function-based 5thgeneration model                       |
+|  72 | Function-based contextually-based challenge              |
+| 134 | Function-based contextually-based challenge              |
+|  43 | Fundamental interactive contingency                      |
+| 135 | Fundamental interactive contingency                      |
+|  71 | Future-proofed intermediate framework                    |
+| 136 | Future-proofed intermediate framework                    |
+|   4 | Grass-roots background focusgroup                        |
+| 137 | Grass-roots background focusgroup                        |
+|  21 | Grass-roots neutral forecast                             |
+| 138 | Grass-roots neutral forecast                             |
+|  35 | Grass-roots optimizing strategy                          |
+| 139 | Grass-roots optimizing strategy                          |
+|  81 | Grass-roots zeroadministration systemengine              |
+| 140 | Grass-roots zeroadministration systemengine              |
+|  99 | Innovative radical function                              |
+| 141 | Innovative radical function                              |
+|  34 | Intuitive intangible analyzer                            |
+| 142 | Intuitive intangible analyzer                            |
+|  46 | Intuitive needs-based migration                          |
+| 143 | Intuitive needs-based migration                          |
+|  61 | Inverse multimedia product                               |
+| 144 | Inverse multimedia product                               |
+|  25 | Managed actuating groupware                              |
+| 145 | Managed actuating groupware                              |
+|  28 | Mandatory motivating customerloyalty                     |
+| 146 | Mandatory motivating customerloyalty                     |
+|  56 | Multi-channelled 24/7 protocol                           |
+| 147 | Multi-channelled 24/7 protocol                           |
+|  29 | Multi-channelled methodical firmware                     |
+| 148 | Multi-channelled methodical firmware                     |
+|  64 | Multi-lateral explicit policy                            |
+| 149 | Multi-lateral explicit policy                            |
+|  67 | Multi-layered bifurcated solution                        |
+| 150 | Multi-layered bifurcated solution                        |
+|  14 | Multi-layered explicit systemengine                      |
+| 151 | Multi-layered explicit systemengine                      |
+|  32 | Multi-layered value-added installation                   |
+| 152 | Multi-layered value-added installation                   |
+|  23 | Networked multimedia artificialintelligence              |
+| 153 | Networked multimedia artificialintelligence              |
+|  19 | Open-architected executive project                       |
+| 154 | Open-architected executive project                       |
+|  33 | Open-architected mission-critical GraphicalUserInterface |
+| 155 | Open-architected mission-critical GraphicalUserInterface |
+|  98 | Operative bifurcated array                               |
+| 156 | Operative bifurcated array                               |
+|  45 | Operative zeroadministration orchestration               |
+| 157 | Operative zeroadministration orchestration               |
+|  87 | Optional content-based firmware                          |
+| 158 | Optional content-based firmware                          |
+|  93 | Persevering 3rdgeneration forecast                       |
+| 159 | Persevering 3rdgeneration forecast                       |
+|  10 | Persistent regional product                              |
+| 160 | Persistent regional product                              |
+|  20 | Phased value-added time-frame                            |
+| 161 | Phased value-added time-frame                            |
+|   8 | Polarised encompassing firmware                          |
+| 162 | Polarised encompassing firmware                          |
+|  70 | Polarised grid-enabled interface                         |
+| 163 | Polarised grid-enabled interface                         |
+|  78 | Polarised mission-critical conglomeration                |
+| 164 | Polarised mission-critical conglomeration                |
+|  77 | Pre-emptive contextually-based flexibility               |
+| 165 | Pre-emptive contextually-based flexibility               |
+|  27 | Pre-emptive hybrid utilisation                           |
+| 166 | Pre-emptive hybrid utilisation                           |
+|   3 | Profit-focused background throughput                     |
+| 167 | Profit-focused background throughput                     |
+|  80 | Programmable bandwidth-monitored access                  |
+| 168 | Programmable bandwidth-monitored access                  |
+|  83 | Programmable zerotolerance extranet                      |
+| 169 | Programmable zerotolerance extranet                      |
+|  54 | Public-key grid-enabled customerloyalty                  |
+| 170 | Public-key grid-enabled customerloyalty                  |
+|  49 | Public-key grid-enabled structure                        |
+| 171 | Public-key grid-enabled structure                        |
+|  15 | Public-key radical interface                             |
+| 172 | Public-key radical interface                             |
+|   1 | Quality-focused non-volatile core                        |
+| 173 | Quality-focused non-volatile core                        |
+|   2 | Re-contextualized eco-centric extranet                   |
+| 174 | Re-contextualized eco-centric extranet                   |
+|  76 | Re-contextualized systemic benchmark                     |
+| 175 | Re-contextualized systemic benchmark                     |
+|  11 | Re-contextualized uniform capability                     |
+| 176 | Re-contextualized uniform capability                     |
+|  47 | Re-engineered solution-oriented projection               |
+| 177 | Re-engineered solution-oriented projection               |
+|  82 | Reactive 5thgeneration standardization                   |
+| 178 | Reactive 5thgeneration standardization                   |
+|  39 | Reactive leadingedge flexibility                         |
+| 179 | Reactive leadingedge flexibility                         |
+|   6 | Reactive multi-state function                            |
+| 180 | Reactive multi-state function                            |
+|  66 | Reverse-engineered solution-oriented functionalities     |
+| 181 | Reverse-engineered solution-oriented functionalities     |
+|  16 | Right-sized 5thgeneration definition                     |
+| 182 | Right-sized 5thgeneration definition                     |
+|  38 | Right-sized clear-thinking hub                           |
+| 183 | Right-sized clear-thinking hub                           |
+|  96 | Robust global approach                                   |
+| 184 | Robust global approach                                   |
+|  95 | Secured cohesive GraphicInterface                        |
+| 185 | Secured cohesive GraphicInterface                        |
+|  48 | Secured encompassing support                             |
+| 186 | Secured encompassing support                             |
+|  69 | Secured high-level systemengine                          |
+| 187 | Secured high-level systemengine                          |
+|  90 | Streamlined well-modulated customerloyalty               |
+| 188 | Streamlined well-modulated customerloyalty               |
+|  85 | Synergistic background model                             |
+| 189 | Synergistic background model                             |
+|  57 | Synergistic didactic time-frame                          |
+| 190 | Synergistic didactic time-frame                          |
+|  13 | Synergized explicit workforce                            |
+| 191 | Synergized explicit workforce                            |
+|  50 | Synergized fresh-thinking methodology                    |
+| 192 | Synergized fresh-thinking methodology                    |
+|  92 | Synergized heuristic customerloyalty                     |
+| 193 | Synergized heuristic customerloyalty                     |
+|   9 | Up-sized bi-directional encryption                       |
+| 194 | Up-sized bi-directional encryption                       |
+|  37 | Up-sized impactful analyzer                              |
+| 195 | Up-sized impactful analyzer                              |
+|  36 | Up-sized intermediate algorithm                          |
+| 196 | Up-sized intermediate algorithm                          |
+|  17 | User-centric demand-driven task-force                    |
+| 197 | User-centric demand-driven task-force                    |
+|  74 | Virtual executive matrix                                 |
+| 198 | Virtual executive matrix                                 |
+|  91 | Vision-oriented optimal customerloyalty                  |
+| 199 | Vision-oriented optimal customerloyalty                  |
+|   7 | Visionary intermediate focusgroup                        |
+| 200 | Visionary intermediate focusgroup                        |
++-----+----------------------------------------------------------+
+200 rows in set (0.00 sec)
 select * from communities order by id; -- ASC сортировка по возрастанию, DESC сортировка по убыванию
+
++-----+----------------------------------------------------------+
+| id  | name                                                     |
++-----+----------------------------------------------------------+
+|   1 | Quality-focused non-volatile core                        |
+|   2 | Re-contextualized eco-centric extranet                   |
+|   3 | Profit-focused background throughput                     |
+|   4 | Grass-roots background focusgroup                        |
+|   5 | Business-focused object-oriented implementation          |
+|   6 | Reactive multi-state function                            |
+|   7 | Visionary intermediate focusgroup                        |
+|   8 | Polarised encompassing firmware                          |
+|   9 | Up-sized bi-directional encryption                       |
+|  10 | Persistent regional product                              |
+|  11 | Re-contextualized uniform capability                     |
+|  12 | Configurable object-oriented task-force                  |
+|  13 | Synergized explicit workforce                            |
+|  14 | Multi-layered explicit systemengine                      |
+|  15 | Public-key radical interface                             |
+|  16 | Right-sized 5thgeneration definition                     |
+|  17 | User-centric demand-driven task-force                    |
+|  18 | Distributed responsive extranet                          |
+|  19 | Open-architected executive project                       |
+|  20 | Phased value-added time-frame                            |
+|  21 | Grass-roots neutral forecast                             |
+|  22 | Diverse systematic structure                             |
+|  23 | Networked multimedia artificialintelligence              |
+|  24 | Customer-focused systematic solution                     |
+|  25 | Managed actuating groupware                              |
+|  26 | Expanded logistical hierarchy                            |
+|  27 | Pre-emptive hybrid utilisation                           |
+|  28 | Mandatory motivating customerloyalty                     |
+|  29 | Multi-channelled methodical firmware                     |
+|  30 | Fully-configurable tangible implementation               |
+|  31 | Extended clear-thinking collaboration                    |
+|  32 | Multi-layered value-added installation                   |
+|  33 | Open-architected mission-critical GraphicalUserInterface |
+|  34 | Intuitive intangible analyzer                            |
+|  35 | Grass-roots optimizing strategy                          |
+|  36 | Up-sized intermediate algorithm                          |
+|  37 | Up-sized impactful analyzer                              |
+|  38 | Right-sized clear-thinking hub                           |
+|  39 | Reactive leadingedge flexibility                         |
+|  40 | Decentralized zerotolerance analyzer                     |
+|  41 | Centralized radical complexity                           |
+|  42 | Distributed multi-tasking circuit                        |
+|  43 | Fundamental interactive contingency                      |
+|  44 | Fully-configurable responsive moratorium                 |
+|  45 | Operative zeroadministration orchestration               |
+|  46 | Intuitive needs-based migration                          |
+|  47 | Re-engineered solution-oriented projection               |
+|  48 | Secured encompassing support                             |
+|  49 | Public-key grid-enabled structure                        |
+|  50 | Synergized fresh-thinking methodology                    |
+|  51 | Cloned exuding time-frame                                |
+|  52 | Facetoface web-enabled moderator                         |
+|  53 | De-engineered exuding info-mediaries                     |
+|  54 | Public-key grid-enabled customerloyalty                  |
+|  55 | Cross-platform fault-tolerant framework                  |
+|  56 | Multi-channelled 24/7 protocol                           |
+|  57 | Synergistic didactic time-frame                          |
+|  58 | Centralized high-level hub                               |
+|  59 | Diverse foreground hub                                   |
+|  60 | Diverse radical ability                                  |
+|  61 | Inverse multimedia product                               |
+|  62 | Front-line discrete product                              |
+|  63 | Cross-group value-added alliance                         |
+|  64 | Multi-lateral explicit policy                            |
+|  65 | Enterprise-wide stable attitude                          |
+|  66 | Reverse-engineered solution-oriented functionalities     |
+|  67 | Multi-layered bifurcated solution                        |
+|  68 | Extended dedicated access                                |
+|  69 | Secured high-level systemengine                          |
+|  70 | Polarised grid-enabled interface                         |
+|  71 | Future-proofed intermediate framework                    |
+|  72 | Function-based contextually-based challenge              |
+|  73 | Front-line maximized localareanetwork                    |
+|  74 | Virtual executive matrix                                 |
+|  75 | Automated 4thgeneration matrix                           |
+|  76 | Re-contextualized systemic benchmark                     |
+|  77 | Pre-emptive contextually-based flexibility               |
+|  78 | Polarised mission-critical conglomeration                |
+|  79 | Enhanced 4thgeneration workforce                         |
+|  80 | Programmable bandwidth-monitored access                  |
+|  81 | Grass-roots zeroadministration systemengine              |
+|  82 | Reactive 5thgeneration standardization                   |
+|  83 | Programmable zerotolerance extranet                      |
+|  84 | Enterprise-wide 24hour instructionset                    |
+|  85 | Synergistic background model                             |
+|  86 | Enterprise-wide client-server utilisation                |
+|  87 | Optional content-based firmware                          |
+|  88 | Extended local GraphicInterface                          |
+|  89 | Expanded responsive groupware                            |
+|  90 | Streamlined well-modulated customerloyalty               |
+|  91 | Vision-oriented optimal customerloyalty                  |
+|  92 | Synergized heuristic customerloyalty                     |
+|  93 | Persevering 3rdgeneration forecast                       |
+|  94 | Down-sized mobile matrices                               |
+|  95 | Secured cohesive GraphicInterface                        |
+|  96 | Robust global approach                                   |
+|  97 | Function-based 5thgeneration model                       |
+|  98 | Operative bifurcated array                               |
+|  99 | Innovative radical function                              |
+| 100 | Down-sized non-volatile focusgroup                       |
+| 101 | Automated 4thgeneration matrix                           |
+| 102 | Business-focused object-oriented implementation          |
+| 103 | Centralized high-level hub                               |
+| 104 | Centralized radical complexity                           |
+| 105 | Cloned exuding time-frame                                |
+| 106 | Configurable object-oriented task-force                  |
+| 107 | Cross-group value-added alliance                         |
+| 108 | Cross-platform fault-tolerant framework                  |
+| 109 | Customer-focused systematic solution                     |
+| 110 | De-engineered exuding info-mediaries                     |
+| 111 | Decentralized zerotolerance analyzer                     |
+| 112 | Distributed multi-tasking circuit                        |
+| 113 | Distributed responsive extranet                          |
+| 114 | Diverse foreground hub                                   |
+| 115 | Diverse radical ability                                  |
+| 116 | Diverse systematic structure                             |
+| 117 | Down-sized mobile matrices                               |
+| 118 | Down-sized non-volatile focusgroup                       |
+| 119 | Enhanced 4thgeneration workforce                         |
+| 120 | Enterprise-wide 24hour instructionset                    |
+| 121 | Enterprise-wide client-server utilisation                |
+| 122 | Enterprise-wide stable attitude                          |
+| 123 | Expanded logistical hierarchy                            |
+| 124 | Expanded responsive groupware                            |
+| 125 | Extended clear-thinking collaboration                    |
+| 126 | Extended dedicated access                                |
+| 127 | Extended local GraphicInterface                          |
+| 128 | Facetoface web-enabled moderator                         |
+| 129 | Front-line discrete product                              |
+| 130 | Front-line maximized localareanetwork                    |
+| 131 | Fully-configurable responsive moratorium                 |
+| 132 | Fully-configurable tangible implementation               |
+| 133 | Function-based 5thgeneration model                       |
+| 134 | Function-based contextually-based challenge              |
+| 135 | Fundamental interactive contingency                      |
+| 136 | Future-proofed intermediate framework                    |
+| 137 | Grass-roots background focusgroup                        |
+| 138 | Grass-roots neutral forecast                             |
+| 139 | Grass-roots optimizing strategy                          |
+| 140 | Grass-roots zeroadministration systemengine              |
+| 141 | Innovative radical function                              |
+| 142 | Intuitive intangible analyzer                            |
+| 143 | Intuitive needs-based migration                          |
+| 144 | Inverse multimedia product                               |
+| 145 | Managed actuating groupware                              |
+| 146 | Mandatory motivating customerloyalty                     |
+| 147 | Multi-channelled 24/7 protocol                           |
+| 148 | Multi-channelled methodical firmware                     |
+| 149 | Multi-lateral explicit policy                            |
+| 150 | Multi-layered bifurcated solution                        |
+| 151 | Multi-layered explicit systemengine                      |
+| 152 | Multi-layered value-added installation                   |
+| 153 | Networked multimedia artificialintelligence              |
+| 154 | Open-architected executive project                       |
+| 155 | Open-architected mission-critical GraphicalUserInterface |
+| 156 | Operative bifurcated array                               |
+| 157 | Operative zeroadministration orchestration               |
+| 158 | Optional content-based firmware                          |
+| 159 | Persevering 3rdgeneration forecast                       |
+| 160 | Persistent regional product                              |
+| 161 | Phased value-added time-frame                            |
+| 162 | Polarised encompassing firmware                          |
+| 163 | Polarised grid-enabled interface                         |
+| 164 | Polarised mission-critical conglomeration                |
+| 165 | Pre-emptive contextually-based flexibility               |
+| 166 | Pre-emptive hybrid utilisation                           |
+| 167 | Profit-focused background throughput                     |
+| 168 | Programmable bandwidth-monitored access                  |
+| 169 | Programmable zerotolerance extranet                      |
+| 170 | Public-key grid-enabled customerloyalty                  |
+| 171 | Public-key grid-enabled structure                        |
+| 172 | Public-key radical interface                             |
+| 173 | Quality-focused non-volatile core                        |
+| 174 | Re-contextualized eco-centric extranet                   |
+| 175 | Re-contextualized systemic benchmark                     |
+| 176 | Re-contextualized uniform capability                     |
+| 177 | Re-engineered solution-oriented projection               |
+| 178 | Reactive 5thgeneration standardization                   |
+| 179 | Reactive leadingedge flexibility                         |
+| 180 | Reactive multi-state function                            |
+| 181 | Reverse-engineered solution-oriented functionalities     |
+| 182 | Right-sized 5thgeneration definition                     |
+| 183 | Right-sized clear-thinking hub                           |
+| 184 | Robust global approach                                   |
+| 185 | Secured cohesive GraphicInterface                        |
+| 186 | Secured encompassing support                             |
+| 187 | Secured high-level systemengine                          |
+| 188 | Streamlined well-modulated customerloyalty               |
+| 189 | Synergistic background model                             |
+| 190 | Synergistic didactic time-frame                          |
+| 191 | Synergized explicit workforce                            |
+| 192 | Synergized fresh-thinking methodology                    |
+| 193 | Synergized heuristic customerloyalty                     |
+| 194 | Up-sized bi-directional encryption                       |
+| 195 | Up-sized impactful analyzer                              |
+| 196 | Up-sized intermediate algorithm                          |
+| 197 | User-centric demand-driven task-force                    |
+| 198 | Virtual executive matrix                                 |
+| 199 | Vision-oriented optimal customerloyalty                  |
+| 200 | Visionary intermediate focusgroup                        |
++-----+----------------------------------------------------------+
+200 rows in set (0.00 sec)
+
 select surname, hometown, email from users;
+
++--------------+-----------------+----------------------------------+
+| surname      | hometown        | email                            |
++--------------+-----------------+----------------------------------+
+| Кумачова     | Москва          | olga568@mail.ru                  |
+| Попова       | Воронеж         | rthomazinb@ox.ac.uk              |
+| Гончарова    | Самара          | gambridgec@sakura.ne.jp          |
+| Закусилова   | Новосибирск     | mantosikd@tinypic.com            |
+| Нагина       | Пермь           | rtabere@admin.ch                 |
+| Платошкина   | Красноярск      | ckendellf@bloglines.com          |
+| Светляков    | Тюмень          | amckeandg@behance.net            |
+| Черникова    | Екатеринбург    | csantryh@mit.edu                 |
+| Зайцева      | Воронеж         | dharcasei@dailymotion.com        |
+| Застрожнова  | Москва          | drouthamj@senate.gov             |
+| Сушкова      | Волгоград       | eshetliff0@virginia.edu          |
+| Бавыкина     | Казань          | ldeguara1@bing.com               |
+| Киреева      | Казань          | cdominick2@cnn.com               |
+| Михайлова    | Красноярск      | dbydaway3@hugedomains.com        |
+| Чиликова     | Тольятти        | hpullin4@state.gov               |
+| Селиванова   | Волгоград       | lhulme5@tamu.edu                 |
+| Лисовой      | Краснодар       | ngrzesiak6@blogspot.com          |
+| Назарьев     | Волгоград       | ewathall7@slate.com              |
+| Метлицкий    | Краснодар       | epindar8@oracle.com              |
+| Белоусова    | Челябинск       | jdelacoste9@chicagotribune.com   |
+| Власова      | Краснодар       | sdowgilla@salon.com              |
+| Волчкевич    | Воронеж         | mhouchenb@jalbum.net             |
+| Волынкин     | Саратов         | rcogarc@storify.com              |
+| Воробьев     | Красноярск      | gbartold@guardian.co.uk          |
+| Лопухов      | Нижний Новгород | dcuffline@harvard.edu            |
+| Лохмачева    | Самара          | ctymf@uiuc.edu                   |
+| Овчинникова  | Казань          | vshelveyg@census.gov             |
+| Погорельский | Пермь           | sworboyh@about.me                |
+| Полищук      | Ростов-на-Дону  | cmayhoi@xrea.com                 |
+| Токарев      | Новосибирск     | jromushkinj@census.gov           |
+| Турбин       | Москва          | npesselk@buzzfeed.com            |
+| Колтакова    | Пермь           | nhackettl@omniture.com           |
+| Попов        | Санкт-Петербург | cwillimentm@livejournal.com      |
+| Черепнина    | Самара          | civensn@deliciousdays.com        |
+| Мошкин       | Екатеринбург    | rbrougho@elegantthemes.com       |
+| Бучнев       | Тюмень          | aandersenp@cisco.com             |
+| Кретинина    | Пермь           | anorquoyq@home.pl                |
+| Трунтаев     | Уфа             | bferrieresr@amazon.co.jp         |
+| Печенкина    | Краснодар       | soffilers@biblegateway.com       |
+| Хрипков      | Новосибирск     | srobilartt@wix.com               |
+| Черникова    | Самара          | adabbotdoyleu@latimes.com        |
+| Бахтерев     | Санкт-Петербург | gmedlerv@desdev.cn               |
+| Попова       | Нижний Новгород | pschonfelderw@icio.us            |
+| Свиридова    | Казань          | klilleyx@ftc.gov                 |
+| Цурканов     | Казань          | dtribey@foxnews.com              |
+| Толмачева    | Омск            | alukockz@google.co.jp            |
+| Суворов      | Санкт-Петербург | acorrington10@barnesandnoble.com |
+| Бредихина    | Пермь           | lradbourn11@diigo.com            |
+| Бумакова     | Москва          | hdudeney12@digg.com              |
+| Максимова    | Уфа             | bpressnell13@cargocollective.com |
+| Мельченко    | Самара          | gtaber14@ask.com                 |
+| Переславцева | Омск            | harchell15@businessinsider.com   |
+| Ситало       | Санкт-Петербург | ssullly16@umn.edu                |
+| Анисимова    | Нижний Новгород | ndunkerly17@elpais.com           |
+| Домарева     | Уфа             | bbass18@cloudflare.com           |
+| Сидельникова | Красноярск      | hrivett19@nyu.edu                |
+| Воронюк      | Москва          | bpiggen1a@networkadvertising.org |
+| Азарова      | Казань          | epiers1b@constantcontact.com     |
+| Ефимова      | Казань          | mizod1c@1und1.de                 |
+| Кондратьева  | Уфа             | iwhetnell1d@kickstarter.com      |
+| Косарева     | Новосибирск     | clamonby1e@boston.com            |
+| Лакомова     | Санкт-Петербург | ssimeons1f@scribd.com            |
+| Полуэктова   | Уфа             | lroggerone1g@engadget.com        |
+| Никулина     | Омск            | astandfield1h@themeforest.net    |
+| Максименко   | Новосибирск     | educkit1i@globo.com              |
+| Асеева       | Волгоград       | khudless1j@oakley.com            |
+| Шипилова     | Пермь           | msandiland1k@unesco.org          |
+| Янкова       | Новосибирск     | mtrevers1l@amazon.com            |
+| Красавин     | Ростов-на-Дону  | uruffle1m@free.fr                |
+| Яньшина      | Воронеж         | lpetruskevich1n@statcounter.com  |
+| Мироненко    | Екатеринбург    | awinnett1o@hao123.com            |
+| Дадонова     | Краснодар       | bfurphy1p@nifty.com              |
+| Мордасова    | Краснодар       | sstemp1q@theglobeandmail.com     |
+| Рыжкова      | Новосибирск     | gmazin1r@fotki.com               |
+| Богомолова   | Пермь           | lkrale1s@google.com.br           |
+| Голощапова   | Москва          | ojosefs1t@shinystat.com          |
+| Дибцева      | Ростов-на-Дону  | apietesch1u@marketwatch.com      |
+| Попов        | Ростов-на-Дону  | lgow1v@example.com               |
+| Рукавицына   | Новосибирск     | cmarte1w@globo.com               |
+| Рыкунов      | Москва          | lruddock1x@wikimedia.org         |
+| Рыкунова     | Красноярск      | jscirman1y@about.me              |
+| Саблин       | Тюмень          | tkitchingman1z@omniture.com      |
+| Самсонов     | Екатеринбург    | mlangman20@biblegateway.com      |
+| Соколова     | Волгоград       | jtuff21@yandex.ru                |
+| Афанасьева   | Москва          | dtidbold22@forbes.com            |
+| Болгов       | Омск            | hspivie23@artisteer.com          |
+| Древаль      | Краснодар       | dsimkiss24@youtu.be              |
+| Дубатовкин   | Москва          | ttichelaar25@i2i.jp              |
+| Простаков    | Воронеж         | vbyard26@dedecms.com             |
+| Пономарев    | Саратов         | lduigenan27@list-manage.com      |
+| Косяков      | Казань          | svery28@nsw.gov.au               |
+| Косяков      | Краснодар       | slitzmann29@timesonline.co.uk    |
+| Скаба        | Воронеж         | jgiacomini2a@youtu.be            |
+| Смольянинов  | Тольятти        | edurston2b@google.ca             |
+| Допперт      | Тюмень          | kfoulks2c@sphinn.com             |
+| Стрыгина     | Волгоград       | jboken2d@wordpress.com           |
+| Анисимов     | Саратов         | gcottage2e@prlog.org             |
+| Гамов        | Красноярск      | hstrotone2f@devhub.com           |
+| Довка        | Саратов         | vtremmel2g@ed.gov                |
+| Калинин      | Воронеж         | jcarlesso2h@google.co.jp         |
+| Пивоваров    | Краснодар       | mrucklidge2i@amazon.co.jp        |
+| Тимошенко    | Саратов         | aprydie2j@vistaprint.com         |
+| Богомолова   | Тольятти        | dbeardsall2k@dmoz.org            |
+| Голощапова   | Екатеринбург    | rbulford2l@goodreads.com         |
+| Дибцева      | Волгоград       | rblankenship2m@aol.com           |
+| Попов        | Красноярск      | lsiveter2n@cnbc.com              |
+| Рукавицына   | Челябинск       | csamples2o@wordpress.com         |
+| Рыкунов      | Краснодар       | bwhitby2p@furl.net               |
+| Рыкунова     | Тюмень          | sbearman2q@ebay.co.uk            |
+| Саблин       | Уфа             | kscobie2r@sciencedaily.com       |
+| Самсонов     | Самара          | afickena@businessweek.com        |
+| Соколова     | Пермь           | mbaynhamb@howstuffworks.com      |
+| Афанасьева   | Волгоград       | doxterbyc@ovh.net                |
+| Болгов       | Челябинск       | ndurekd@facebook.com             |
+| Древаль      | Красноярск      | echildse@sohu.com                |
+| Дубоваткин   | Волгоград       | agrigorushkinf@infoseek.co.jp    |
+| Простаков    | Уфа             | hmcganng@umn.edu                 |
+| Пономарев    | Пермь           | mcumberpatchh@macromedia.com     |
+| Паршин       | Санкт-Петербург | ebankei@senate.gov               |
+| Петров       | Краснодар       | tbrandij@cyberchimps.com         |
+| Сидоров      | Самара          | kbarthramk@springer.com          |
+| Ворфоломеев  | Челябинск       | snewlandl@qq.com                 |
+| Алехин       | Екатеринбург    | rstredderm@slideshare.net        |
+| Паршина      | Челябинск       | gpimn@github.com                 |
+| Трубицына    | Москва          | lbiniono@examiner.com            |
+| Паршина      | Челябинск       | jkreberp@i2i.jp                  |
+| Кривцова     | Красноярск      | mburnhamsq@baidu.com             |
+| Бурмистрова  | Уфа             | wlangtreer@example.com           |
+| Воронова     | Тольятти        | cburlays@pen.io                  |
+| Заводскова   | Пермь           | filymanovt@nydailynews.com       |
+| Воронин      | Тюмень          | ckluliseku@theguardian.com       |
+| Баранова     | Челябинск       | fpointinv@yale.edu               |
+| Семикоз      | Самара          | hsisnerosw@surveymonkey.com      |
+| Буланый      | Казань          | gbretonx@clickbank.net           |
+| Тафинцева    | Екатеринбург    | smcivery@networkadvertising.org  |
+| Аксененкова  | Пермь           | cmacnamaraz@arstechnica.com      |
+| Лунева       | Уфа             | mseamer10@uol.com.br             |
+| Федоров      | Саратов         | mjanew11@tuttocitta.it           |
+| Корчагина    | Омск            | isibbald12@livejournal.com       |
+| Щербинина    | Нижний Новгород | ocuardall13@mashable.com         |
++--------------+-----------------+----------------------------------+
+
 select * from users limit 5;
-select * from users limit 7 offset 10;
++----+--------+------------+-------------------------+------------+--------+------------+-------------+----------+------------------------------------------+---------------------+
+| id | name   | surname    | email                   | phone      | gender | birthday   | hometown    | photo_id | pass                                     | created_at          |
++----+--------+------------+-------------------------+------------+--------+------------+-------------+----------+------------------------------------------+---------------------+
+|  1 | Ольга  | Кумачова   | olga568@mail.ru         | 7954098654 | f      | 1977-01-04 | Москва      |     NULL | 546jdfhsdh56k5jdisofj5                   | 2020-10-02 12:45:40 |
+|  2 | Дарья  | Попова     | rthomazinb@ox.ac.uk     | 8151557164 | f      | 1984-11-28 | Воронеж     |     NULL | 32afa0b02c8399d1960509c3fbd4cc75ab4dcce2 | 2020-09-25 22:09:27 |
+|  3 | Ирина  | Гончарова  | gambridgec@sakura.ne.jp | 2907266453 | f      | 1984-08-24 | Самара      |     NULL | afd3e457d3b9f6f880623163ea8f72889777a58b | 2020-09-25 22:09:27 |
+|  4 | Марина | Закусилова | mantosikd@tinypic.com   | 5949091863 | f      | 1981-04-16 | Новосибирск |     NULL | 9154186410a62369bdf4fd2bd632ca3511b270a7 | 2020-09-25 22:09:27 |
+|  5 | Елена  | Нагина     | rtabere@admin.ch        | 6966471579 | f      | 1988-08-10 | Пермь       |     NULL | 9bc443a6e52541784d52b69acc39343526886b11 | 2020-09-25 22:09:27 |
++----+--------+------------+-------------------------+------------+--------+------------+-------------+----------+------------------------------------------+---------------------+
 select * from users limit 3 offset 8; -- идентично select * from users limit 8,3;
++----+-------+-------------+---------------------------+------------+--------+------------+-----------+----------+------------------------------------------+---------------------+
+| id | name  | surname     | email                     | phone      | gender | birthday   | hometown  | photo_id | pass                                     | created_at          |
++----+-------+-------------+---------------------------+------------+--------+------------+-----------+----------+------------------------------------------+---------------------+
+|  9 | Алиса | Зайцева     | dharcasei@dailymotion.com | 4568198247 | f      | 1989-04-03 | Воронеж   |     NULL | ea63b484704b7a8316da4025260b864453adb948 | 2020-09-25 22:09:27 |
+| 10 | Ольга | Застрожнова | drouthamj@senate.gov      | 9259428337 | f      | 1983-05-07 | Москва    |     NULL | 9b1f31426e9caf75d46b9b4a7c58c1941daa33f0 | 2020-09-25 22:09:27 |
+| 11 | Ирина | Сушкова     | eshetliff0@virginia.edu   | 9442875153 | f      | 1984-12-19 | Волгоград |     NULL | 9d0f9f7cdbe467af211a5d5bc91e2e16da891521 | 2020-09-25 22:09:27 |
++----+-------+-------------+---------------------------+------------+--------+------------+-----------+----------+------------------------------------------+---------------------+
 select concat(surname,' ',name) persons from users;
++-----------------------+
+| persons               |
++-----------------------+
+| Ворфоломеев Александр |
+| Калинин Александр     |
+| Пономарев Александр   |
+| Пономарев Александр   |
+| Федоров Александр     |
+| Алехин Алексей        |
+| Болгов Алексей        |
+| Болгов Алексей        |
+| Метлицкий Алексей     |
+| Петров Алексей        |
+| Самсонов Алексей      |
+| Самсонов Алексей      |
+| Суворов Алексей       |
+| Тимошенко Алексей     |
+| Зайцева Алиса         |
+| Толмачева Алла        |
+| Бурмистрова Анастасия |
+| Рыкунова Анастасия    |
+| Рыкунова Анастасия    |
+| Буланый Андрей        |
+| Косяков Андрей        |
+| Мошкин Андрей         |
+| Бавыкина Анна         |
+| Колтакова Анна        |
+| Полуэктова Анна       |
+| Яньшина Анна          |
+| Платошкина Валерия    |
+| Лунева Виктория       |
+| Бредихина Виталия     |
+| Воробьев Владимир     |
+| Полищук Владимир      |
+| Гамов Вячеслав        |
+| Допперт Вячеслав      |
+| Погорельский Вячеслав |
+| Максимова Галина      |
+| Рукавицына Галина     |
+| Рукавицына Галина     |
+| Попова Дарья          |
+| Древаль Дмитрий       |
+| Древаль Дмитрий       |
+| Косяков Дмитрий       |
+| Лопухов Дмитрий       |
+| Попов Дмитрий         |
+| Попов Дмитрий         |
+| Смольянинов Дмитрий   |
+| Бучнев Евгений        |
+| Волынкин Евгений      |
+| Красавин Евгений      |
+| Турбин Евгений        |
+| Кривцова Евгения      |
+| Мельченко Евгения     |
+| Богомолова Екатерина  |
+| Богомолова Екатерина  |
+| Власова Екатерина     |
+| Кретинина Екатерина   |
+| Паршина Екатерина     |
+| Паршина Екатерина     |
+| Попова Екатерина      |
+| Соколова Екатерина    |
+| Соколова Екатерина    |
+| Шипилова Екатерина    |
+| Бумакова Елена        |
+| Воронова Елена        |
+| Михайлова Елена       |
+| Нагина Елена          |
+| Рыжкова Елена         |
+| Селиванова Елена      |
+| Стрыгина Елена        |
+| Янкова Елена          |
+| Токарев Игорь         |
+| Дибцева Инна          |
+| Дибцева Инна          |
+| Воронюк Ираида        |
+| Анисимова Ирина       |
+| Гончарова Ирина       |
+| Лакомова Ирина        |
+| Сидельникова Ирина    |
+| Сушкова Ирина         |
+| Черникова Ирина       |
+| Корчагина Любовь      |
+| Чиликова Любовь       |
+| Дадонова Людмила      |
+| Скаба Людмила         |
+| Бахтерев Максим       |
+| Дубатовкин Максим     |
+| Дубоваткин Максим     |
+| Паршин Максим         |
+| Попов Максим          |
+| Овчинникова Маргарита |
+| Голощапова Марина     |
+| Голощапова Марина     |
+| Закусилова Марина     |
+| Киреева Марина        |
+| Свиридова Марина      |
+| Семикоз Марина        |
+| Ефимова Мария         |
+| Тафинцева Мария       |
+| Назарьев Михаил       |
+| Хрипков Михаил        |
+| Домарева Наталья      |
+| Заводскова Наталья    |
+| Мироненко Наталья     |
+| Трубицына Наталья     |
+| Рыкунов Никита        |
+| Рыкунов Никита        |
+| Пивоваров Николай     |
+| Сидоров Николай       |
+| Аксененкова Ольга     |
+| Застрожнова Ольга     |
+| Кумачова Ольга        |
+| Лохмачева Ольга       |
+| Мордасова Ольга       |
+| Никулина Ольга        |
+| Черникова Ольга       |
+| Щербинина Ольга       |
+| Трунтаев Павел        |
+| Анисимов Сергей       |
+| Воронин Сергей        |
+| Лисовой Сергей        |
+| Простаков Сергей      |
+| Простаков Сергей      |
+| Цурканов Сергей       |
+| Светляков Станислав   |
+| Асеева Татьяна        |
+| Афанасьева Татьяна    |
+| Афанасьева Татьяна    |
+| Переславцева Татьяна  |
+| Ситало Татьяна        |
+| Белоусова Эльвира     |
+| Азарова Юлия          |
+| Баранова Юлия         |
+| Кондратьева Юлия      |
+| Косарева Юлия         |
+| Максименко Юлия       |
+| Печенкина Юлия        |
+| Черепнина Юлия        |
+| Волчкевич Юрий        |
+| Довка Юрий            |
+| Саблин Юрий           |
+| Саблин Юрий           |
++-----------------------+
 select concat(SUBSTRING(name,1,1), '. ',surname) persons from users;
++-----------------+
+| persons         |
++-----------------+
+| А. Ворфоломеев  |
+| А. Калинин      |
+| А. Пономарев    |
+| А. Пономарев    |
+| А. Федоров      |
+| А. Алехин       |
+| А. Болгов       |
+| А. Болгов       |
+| А. Метлицкий    |
+| А. Петров       |
+| А. Самсонов     |
+| А. Самсонов     |
+| А. Суворов      |
+| А. Тимошенко    |
+| А. Зайцева      |
+| А. Толмачева    |
+| А. Бурмистрова  |
+| А. Рыкунова     |
+| А. Рыкунова     |
+| А. Буланый      |
+| А. Косяков      |
+| А. Мошкин       |
+| А. Бавыкина     |
+| А. Колтакова    |
+| А. Полуэктова   |
+| А. Яньшина      |
+| В. Платошкина   |
+| В. Лунева       |
+| В. Бредихина    |
+| В. Воробьев     |
+| В. Полищук      |
+| В. Гамов        |
+| В. Допперт      |
+| В. Погорельский |
+| Г. Максимова    |
+| Г. Рукавицына   |
+| Г. Рукавицына   |
+| Д. Попова       |
+| Д. Древаль      |
+| Д. Древаль      |
+| Д. Косяков      |
+| Д. Лопухов      |
+| Д. Попов        |
+| Д. Попов        |
+| Д. Смольянинов  |
+| Е. Бучнев       |
+| Е. Волынкин     |
+| Е. Красавин     |
+| Е. Турбин       |
+| Е. Кривцова     |
+| Е. Мельченко    |
+| Е. Богомолова   |
+| Е. Богомолова   |
+| Е. Власова      |
+| Е. Кретинина    |
+| Е. Паршина      |
+| Е. Паршина      |
+| Е. Попова       |
+| Е. Соколова     |
+| Е. Соколова     |
+| Е. Шипилова     |
+| Е. Бумакова     |
+| Е. Воронова     |
+| Е. Михайлова    |
+| Е. Нагина       |
+| Е. Рыжкова      |
+| Е. Селиванова   |
+| Е. Стрыгина     |
+| Е. Янкова       |
+| И. Токарев      |
+| И. Дибцева      |
+| И. Дибцева      |
+| И. Воронюк      |
+| И. Анисимова    |
+| И. Гончарова    |
+| И. Лакомова     |
+| И. Сидельникова |
+| И. Сушкова      |
+| И. Черникова    |
+| Л. Корчагина    |
+| Л. Чиликова     |
+| Л. Дадонова     |
+| Л. Скаба        |
+| М. Бахтерев     |
+| М. Дубатовкин   |
+| М. Дубоваткин   |
+| М. Паршин       |
+| М. Попов        |
+| М. Овчинникова  |
+| М. Голощапова   |
+| М. Голощапова   |
+| М. Закусилова   |
+| М. Киреева      |
+| М. Свиридова    |
+| М. Семикоз      |
+| М. Ефимова      |
+| М. Тафинцева    |
+| М. Назарьев     |
+| М. Хрипков      |
+| Н. Домарева     |
+| Н. Заводскова   |
+| Н. Мироненко    |
+| Н. Трубицына    |
+| Н. Рыкунов      |
+| Н. Рыкунов      |
+| Н. Пивоваров    |
+| Н. Сидоров      |
+| О. Аксененкова  |
+| О. Застрожнова  |
+| О. Кумачова     |
+| О. Лохмачева    |
+| О. Мордасова    |
+| О. Никулина     |
+| О. Черникова    |
+| О. Щербинина    |
+| П. Трунтаев     |
+| С. Анисимов     |
+| С. Воронин      |
+| С. Лисовой      |
+| С. Простаков    |
+| С. Простаков    |
+| С. Цурканов     |
+| С. Светляков    |
+| Т. Асеева       |
+| Т. Афанасьева   |
+| Т. Афанасьева   |
+| Т. Переславцева |
+| Т. Ситало       |
+| Э. Белоусова    |
+| Ю. Азарова      |
+| Ю. Баранова     |
+| Ю. Кондратьева  |
+| Ю. Косарева     |
+| Ю. Максименко   |
+| Ю. Печенкина    |
+| Ю. Черепнина    |
+| Ю. Волчкевич    |
+| Ю. Довка        |
+| Ю. Саблин       |
+| Ю. Саблин       |
++-----------------+
 select distinct hometown from users;
-
++-----------------+
+| hometown        |
++-----------------+
+| Москва          |
+| Воронеж         |
+| Самара          |
+| Новосибирск     |
+| Пермь           |
+| Красноярск      |
+| Тюмень          |
+| Екатеринбург    |
+| Волгоград       |
+| Казань          |
+| Тольятти        |
+| Краснодар       |
+| Челябинск       |
+| Саратов         |
+| Нижний Новгород |
+| Ростов-на-Дону  |
+| Санкт-Петербург |
+| Уфа             |
+| Омск            |
++-----------------+
 select * from users where hometown = 'Санкт-Петербург';
-
++-----+---------+----------+----------------------------------+------------+--------+------------+-----------------+----------+------------------------------------------+---------------------+
+| id  | name    | surname  | email                            | phone      | gender | birthday   | hometown        | photo_id | pass                                     | created_at          |
++-----+---------+----------+----------------------------------+------------+--------+------------+-----------------+----------+------------------------------------------+---------------------+
+|  33 | Максим  | Попов    | cwillimentm@livejournal.com      | 6549392162 | m      | 1989-05-01 | Санкт-Петербург |     NULL | 1bc1a0536d38b6216b74a2819436ba0a925206c8 | 2020-09-25 22:09:27 |
+|  42 | Максим  | Бахтерев | gmedlerv@desdev.cn               | 7849899275 | m      | 1986-12-27 | Санкт-Петербург |     NULL | 4613c2845f696b03d37b801e0cdab710fb6beaea | 2020-09-25 22:09:27 |
+|  47 | Алексей | Суворов  | acorrington10@barnesandnoble.com | 2034001863 | m      | 1984-08-12 | Санкт-Петербург |     NULL | 7fe1c2e54c91bb20754abe19f3633ecb294f69ce | 2020-09-25 22:09:27 |
+|  53 | Татьяна | Ситало   | ssullly16@umn.edu                | 2822890926 | f      | 1988-02-03 | Санкт-Петербург |     NULL | e02ed0156bcadbc65c407e4f6d0c907449dcfb49 | 2020-09-25 22:09:27 |
+|  62 | Ирина   | Лакомова | ssimeons1f@scribd.com            | 8902784216 | f      | 1981-11-11 | Санкт-Петербург |     NULL | b48da6b9f87aa771566ab1d75cb69081105f6a50 | 2020-09-25 22:09:27 |
+| 119 | Максим  | Паршин   | ebankei@senate.gov               | 1672124574 | m      | 1985-04-26 | Санкт-Петербург |     NULL | 7bc86a9ac9b93f30c1af49c7423cc27c2773bd57 | 2020-09-25 22:09:27 |
++-----+---------+----------+----------------------------------+------------+--------+------------+-----------------+----------+------------------------------------------+---------------------+
 select name,surname, birthday 
 	from users where birthday >= '1981-12-25' 
 	order by birthday;
-
++-----------+--------------+------------+
+| name      | surname      | birthday   |
++-----------+--------------+------------+
+| Евгений   | Бучнев       | 1982-01-29 |
+| Дмитрий   | Попов        | 1982-02-26 |
+| Екатерина | Богомолова   | 1982-03-10 |
+| Сергей    | Анисимов     | 1982-03-13 |
+| Елена     | Селиванова   | 1982-03-27 |
+| Юлия      | Черепнина    | 1982-04-09 |
+| Анна      | Бавыкина     | 1982-04-19 |
+| Людмила   | Дадонова     | 1982-06-07 |
+| Екатерина | Соколова     | 1982-08-25 |
+| Ирина     | Черникова    | 1982-10-20 |
+| Александр | Калинин      | 1982-10-29 |
+| Вячеслав  | Гамов        | 1982-11-10 |
+| Юрий      | Саблин       | 1982-11-23 |
+| Марина    | Свиридова    | 1982-12-26 |
+| Дмитрий   | Древаль      | 1983-01-19 |
+| Ольга     | Щербинина    | 1983-02-13 |
+| Дмитрий   | Косяков      | 1983-03-05 |
+| Ираида    | Воронюк      | 1983-04-04 |
+| Ольга     | Застрожнова  | 1983-05-07 |
+| Дмитрий   | Древаль      | 1983-05-17 |
+| Александр | Ворфоломеев  | 1983-09-08 |
+| Юлия      | Азарова      | 1983-10-13 |
+| Дмитрий   | Лопухов      | 1983-11-03 |
+| Любовь    | Чиликова     | 1983-11-22 |
+| Екатерина | Власова      | 1984-04-11 |
+| Марина    | Киреева      | 1984-04-26 |
+| Ольга     | Аксененкова  | 1984-05-14 |
+| Екатерина | Паршина      | 1984-05-16 |
+| Станислав | Светляков    | 1984-05-19 |
+| Максим    | Дубоваткин   | 1984-05-26 |
+| Никита    | Рыкунов      | 1984-06-03 |
+| Михаил    | Назарьев     | 1984-06-06 |
+| Александр | Пономарев    | 1984-07-17 |
+| Алексей   | Суворов      | 1984-08-12 |
+| Алла      | Толмачева    | 1984-08-18 |
+| Ирина     | Гончарова    | 1984-08-24 |
+| Екатерина | Соколова     | 1984-09-14 |
+| Николай   | Сидоров      | 1984-09-21 |
+| Евгений   | Красавин     | 1984-10-16 |
+| Галина    | Рукавицына   | 1984-11-06 |
+| Анна      | Яньшина      | 1984-11-18 |
+| Дарья     | Попова       | 1984-11-28 |
+| Екатерина | Шипилова     | 1984-11-30 |
+| Ирина     | Сушкова      | 1984-12-19 |
+| Максим    | Паршин       | 1985-04-26 |
+| Виктория  | Лунева       | 1985-04-28 |
+| Сергей    | Воронин      | 1985-06-21 |
+| Игорь     | Токарев      | 1985-07-08 |
+| Сергей    | Цурканов     | 1985-07-24 |
+| Татьяна   | Переславцева | 1985-08-23 |
+| Наталья   | Домарева     | 1985-09-18 |
+| Максим    | Дубатовкин   | 1985-10-13 |
+| Инна      | Дибцева      | 1986-01-05 |
+| Марина    | Голощапова   | 1986-02-11 |
+| Анастасия | Рыкунова     | 1986-02-13 |
+| Павел     | Трунтаев     | 1986-03-07 |
+| Алексей   | Самсонов     | 1986-03-09 |
+| Галина    | Рукавицына   | 1986-03-14 |
+| Юлия      | Баранова     | 1986-04-11 |
+| Елена     | Рыжкова      | 1986-06-25 |
+| Наталья   | Мироненко    | 1986-07-13 |
+| Алексей   | Болгов       | 1986-08-21 |
+| Наталья   | Заводскова   | 1986-10-29 |
+| Александр | Пономарев    | 1986-12-08 |
+| Инна      | Дибцева      | 1986-12-17 |
+| Максим    | Бахтерев     | 1986-12-27 |
+| Александр | Федоров      | 1986-12-29 |
+| Елена     | Бумакова     | 1987-01-10 |
+| Сергей    | Простаков    | 1987-02-03 |
+| Михаил    | Хрипков      | 1987-02-04 |
+| Мария     | Тафинцева    | 1987-02-07 |
+| Юлия      | Печенкина    | 1987-03-26 |
+| Татьяна   | Афанасьева   | 1987-05-15 |
+| Алексей   | Петров       | 1987-06-13 |
+| Евгений   | Турбин       | 1987-08-18 |
+| Наталья   | Трубицына    | 1987-08-20 |
+| Екатерина | Паршина      | 1987-08-27 |
+| Дмитрий   | Смольянинов  | 1987-10-17 |
+| Владимир  | Полищук      | 1987-10-25 |
+| Юлия      | Косарева     | 1987-11-04 |
+| Алексей   | Болгов       | 1987-11-26 |
+| Евгения   | Кривцова     | 1987-11-28 |
+| Юлия      | Максименко   | 1987-11-29 |
+| Эльвира   | Белоусова    | 1987-12-19 |
+| Вячеслав  | Погорельский | 1988-01-05 |
+| Татьяна   | Ситало       | 1988-02-03 |
+| Юрий      | Саблин       | 1988-02-24 |
+| Ирина     | Сидельникова | 1988-03-18 |
+| Елена     | Стрыгина     | 1988-05-04 |
+| Галина    | Максимова    | 1988-05-14 |
+| Николай   | Пивоваров    | 1988-05-20 |
+| Мария     | Ефимова      | 1988-06-04 |
+| Марина    | Голощапова   | 1988-06-07 |
+| Сергей    | Лисовой      | 1988-08-03 |
+| Елена     | Нагина       | 1988-08-10 |
+| Виталия   | Бредихина    | 1988-09-01 |
+| Елена     | Янкова       | 1988-11-26 |
+| Екатерина | Богомолова   | 1988-12-27 |
+| Екатерина | Попова       | 1989-01-09 |
+| Людмила   | Скаба        | 1989-01-28 |
+| Анна      | Колтакова    | 1989-03-04 |
+| Алиса     | Зайцева      | 1989-04-03 |
+| Максим    | Попов        | 1989-05-01 |
+| Татьяна   | Асеева       | 1989-05-27 |
+| Андрей    | Буланый      | 1989-06-04 |
+| Анастасия | Рыкунова     | 1989-06-12 |
+| Екатерина | Кретинина    | 1989-07-09 |
+| Алексей   | Тимошенко    | 1989-09-17 |
+| Ольга     | Никулина     | 1989-09-28 |
+| Ирина     | Анисимова    | 1989-11-15 |
++-----------+--------------+------------+
 select name,surname, birthday 
 	from users where birthday >= '1981-12-25' and birthday <= '1987-11-03';
 
 select name,surname, birthday 
-	from users where birthday between '1981-12-25' and '1987-11-03';
+	from users where birthday between '1981-12-25' and '1983-11-03';
++-----------+-------------+------------+
+| name      | surname     | birthday   |
++-----------+-------------+------------+
+| Ирина     | Черникова   | 1982-10-20 |
+| Ольга     | Застрожнова | 1983-05-07 |
+| Анна      | Бавыкина    | 1982-04-19 |
+| Елена     | Селиванова  | 1982-03-27 |
+| Дмитрий   | Лопухов     | 1983-11-03 |
+| Юлия      | Черепнина   | 1982-04-09 |
+| Евгений   | Бучнев      | 1982-01-29 |
+| Марина    | Свиридова   | 1982-12-26 |
+| Ираида    | Воронюк     | 1983-04-04 |
+| Юлия      | Азарова     | 1983-10-13 |
+| Людмила   | Дадонова    | 1982-06-07 |
+| Екатерина | Богомолова  | 1982-03-10 |
+| Дмитрий   | Древаль     | 1983-01-19 |
+| Дмитрий   | Косяков     | 1983-03-05 |
+| Сергей    | Анисимов    | 1982-03-13 |
+| Вячеслав  | Гамов       | 1982-11-10 |
+| Александр | Калинин     | 1982-10-29 |
+| Дмитрий   | Попов       | 1982-02-26 |
+| Юрий      | Саблин      | 1982-11-23 |
+| Екатерина | Соколова    | 1982-08-25 |
+| Дмитрий   | Древаль     | 1983-05-17 |
+| Александр | Ворфоломеев | 1983-09-08 |
+| Ольга     | Щербинина   | 1983-02-13 |
++-----------+-------------+------------+
 
 select name,surname,hometown from users where hometown != 'Казань';
++-----------+--------------+-----------------+
+| name      | surname      | hometown        |
++-----------+--------------+-----------------+
+| Ольга     | Кумачова     | Москва          |
+| Дарья     | Попова       | Воронеж         |
+| Ирина     | Гончарова    | Самара          |
+| Марина    | Закусилова   | Новосибирск     |
+| Елена     | Нагина       | Пермь           |
+| Валерия   | Платошкина   | Красноярск      |
+| Станислав | Светляков    | Тюмень          |
+| Ирина     | Черникова    | Екатеринбург    |
+| Алиса     | Зайцева      | Воронеж         |
+| Ольга     | Застрожнова  | Москва          |
+| Ирина     | Сушкова      | Волгоград       |
+| Елена     | Михайлова    | Красноярск      |
+| Любовь    | Чиликова     | Тольятти        |
+| Елена     | Селиванова   | Волгоград       |
+| Сергей    | Лисовой      | Краснодар       |
+| Михаил    | Назарьев     | Волгоград       |
+| Алексей   | Метлицкий    | Краснодар       |
+| Эльвира   | Белоусова    | Челябинск       |
+| Екатерина | Власова      | Краснодар       |
+| Юрий      | Волчкевич    | Воронеж         |
+| Евгений   | Волынкин     | Саратов         |
+| Владимир  | Воробьев     | Красноярск      |
+| Дмитрий   | Лопухов      | Нижний Новгород |
+| Ольга     | Лохмачева    | Самара          |
+| Вячеслав  | Погорельский | Пермь           |
+| Владимир  | Полищук      | Ростов-на-Дону  |
+| Игорь     | Токарев      | Новосибирск     |
+| Евгений   | Турбин       | Москва          |
+| Анна      | Колтакова    | Пермь           |
+| Максим    | Попов        | Санкт-Петербург |
+| Юлия      | Черепнина    | Самара          |
+| Андрей    | Мошкин       | Екатеринбург    |
+| Евгений   | Бучнев       | Тюмень          |
+| Екатерина | Кретинина    | Пермь           |
+| Павел     | Трунтаев     | Уфа             |
+| Юлия      | Печенкина    | Краснодар       |
+| Михаил    | Хрипков      | Новосибирск     |
+| Ольга     | Черникова    | Самара          |
+| Максим    | Бахтерев     | Санкт-Петербург |
+| Екатерина | Попова       | Нижний Новгород |
+| Алла      | Толмачева    | Омск            |
+| Алексей   | Суворов      | Санкт-Петербург |
+| Виталия   | Бредихина    | Пермь           |
+| Елена     | Бумакова     | Москва          |
+| Галина    | Максимова    | Уфа             |
+| Евгения   | Мельченко    | Самара          |
+| Татьяна   | Переславцева | Омск            |
+| Татьяна   | Ситало       | Санкт-Петербург |
+| Ирина     | Анисимова    | Нижний Новгород |
+| Наталья   | Домарева     | Уфа             |
+| Ирина     | Сидельникова | Красноярск      |
+| Ираида    | Воронюк      | Москва          |
+| Юлия      | Кондратьева  | Уфа             |
+| Юлия      | Косарева     | Новосибирск     |
+| Ирина     | Лакомова     | Санкт-Петербург |
+| Анна      | Полуэктова   | Уфа             |
+| Ольга     | Никулина     | Омск            |
+| Юлия      | Максименко   | Новосибирск     |
+| Татьяна   | Асеева       | Волгоград       |
+| Екатерина | Шипилова     | Пермь           |
+| Елена     | Янкова       | Новосибирск     |
+| Евгений   | Красавин     | Ростов-на-Дону  |
+| Анна      | Яньшина      | Воронеж         |
+| Наталья   | Мироненко    | Екатеринбург    |
+| Людмила   | Дадонова     | Краснодар       |
+| Ольга     | Мордасова    | Краснодар       |
+| Елена     | Рыжкова      | Новосибирск     |
+| Екатерина | Богомолова   | Пермь           |
+| Марина    | Голощапова   | Москва          |
+| Инна      | Дибцева      | Ростов-на-Дону  |
+| Дмитрий   | Попов        | Ростов-на-Дону  |
+| Галина    | Рукавицына   | Новосибирск     |
+| Никита    | Рыкунов      | Москва          |
+| Анастасия | Рыкунова     | Красноярск      |
+| Юрий      | Саблин       | Тюмень          |
+| Алексей   | Самсонов     | Екатеринбург    |
+| Екатерина | Соколова     | Волгоград       |
+| Татьяна   | Афанасьева   | Москва          |
+| Алексей   | Болгов       | Омск            |
+| Дмитрий   | Древаль      | Краснодар       |
+| Максим    | Дубатовкин   | Москва          |
+| Сергей    | Простаков    | Воронеж         |
+| Александр | Пономарев    | Саратов         |
+| Дмитрий   | Косяков      | Краснодар       |
+| Людмила   | Скаба        | Воронеж         |
+| Дмитрий   | Смольянинов  | Тольятти        |
+| Вячеслав  | Допперт      | Тюмень          |
+| Елена     | Стрыгина     | Волгоград       |
+| Сергей    | Анисимов     | Саратов         |
+| Вячеслав  | Гамов        | Красноярск      |
+| Юрий      | Довка        | Саратов         |
+| Александр | Калинин      | Воронеж         |
+| Николай   | Пивоваров    | Краснодар       |
+| Алексей   | Тимошенко    | Саратов         |
+| Екатерина | Богомолова   | Тольятти        |
+| Марина    | Голощапова   | Екатеринбург    |
+| Инна      | Дибцева      | Волгоград       |
+| Дмитрий   | Попов        | Красноярск      |
+| Галина    | Рукавицына   | Челябинск       |
+| Никита    | Рыкунов      | Краснодар       |
+| Анастасия | Рыкунова     | Тюмень          |
+| Юрий      | Саблин       | Уфа             |
+| Алексей   | Самсонов     | Самара          |
+| Екатерина | Соколова     | Пермь           |
+| Татьяна   | Афанасьева   | Волгоград       |
+| Алексей   | Болгов       | Челябинск       |
+| Дмитрий   | Древаль      | Красноярск      |
+| Максим    | Дубоваткин   | Волгоград       |
+| Сергей    | Простаков    | Уфа             |
+| Александр | Пономарев    | Пермь           |
+| Максим    | Паршин       | Санкт-Петербург |
+| Алексей   | Петров       | Краснодар       |
+| Николай   | Сидоров      | Самара          |
+| Александр | Ворфоломеев  | Челябинск       |
+| Алексей   | Алехин       | Екатеринбург    |
+| Екатерина | Паршина      | Челябинск       |
+| Наталья   | Трубицына    | Москва          |
+| Екатерина | Паршина      | Челябинск       |
+| Евгения   | Кривцова     | Красноярск      |
+| Анастасия | Бурмистрова  | Уфа             |
+| Елена     | Воронова     | Тольятти        |
+| Наталья   | Заводскова   | Пермь           |
+| Сергей    | Воронин      | Тюмень          |
+| Юлия      | Баранова     | Челябинск       |
+| Марина    | Семикоз      | Самара          |
+| Мария     | Тафинцева    | Екатеринбург    |
+| Ольга     | Аксененкова  | Пермь           |
+| Виктория  | Лунева       | Уфа             |
+| Александр | Федоров      | Саратов         |
+| Любовь    | Корчагина    | Омск            |
+| Ольга     | Щербинина    | Нижний Новгород |
++-----------+--------------+-----------------+
 select name,surname,hometown from users where hometown <> 'Омск';
++-----------+--------------+-----------------+
+| name      | surname      | hometown        |
++-----------+--------------+-----------------+
+| Ольга     | Кумачова     | Москва          |
+| Дарья     | Попова       | Воронеж         |
+| Ирина     | Гончарова    | Самара          |
+| Марина    | Закусилова   | Новосибирск     |
+| Елена     | Нагина       | Пермь           |
+| Валерия   | Платошкина   | Красноярск      |
+| Станислав | Светляков    | Тюмень          |
+| Ирина     | Черникова    | Екатеринбург    |
+| Алиса     | Зайцева      | Воронеж         |
+| Ольга     | Застрожнова  | Москва          |
+| Ирина     | Сушкова      | Волгоград       |
+| Анна      | Бавыкина     | Казань          |
+| Марина    | Киреева      | Казань          |
+| Елена     | Михайлова    | Красноярск      |
+| Любовь    | Чиликова     | Тольятти        |
+| Елена     | Селиванова   | Волгоград       |
+| Сергей    | Лисовой      | Краснодар       |
+| Михаил    | Назарьев     | Волгоград       |
+| Алексей   | Метлицкий    | Краснодар       |
+| Эльвира   | Белоусова    | Челябинск       |
+| Екатерина | Власова      | Краснодар       |
+| Юрий      | Волчкевич    | Воронеж         |
+| Евгений   | Волынкин     | Саратов         |
+| Владимир  | Воробьев     | Красноярск      |
+| Дмитрий   | Лопухов      | Нижний Новгород |
+| Ольга     | Лохмачева    | Самара          |
+| Маргарита | Овчинникова  | Казань          |
+| Вячеслав  | Погорельский | Пермь           |
+| Владимир  | Полищук      | Ростов-на-Дону  |
+| Игорь     | Токарев      | Новосибирск     |
+| Евгений   | Турбин       | Москва          |
+| Анна      | Колтакова    | Пермь           |
+| Максим    | Попов        | Санкт-Петербург |
+| Юлия      | Черепнина    | Самара          |
+| Андрей    | Мошкин       | Екатеринбург    |
+| Евгений   | Бучнев       | Тюмень          |
+| Екатерина | Кретинина    | Пермь           |
+| Павел     | Трунтаев     | Уфа             |
+| Юлия      | Печенкина    | Краснодар       |
+| Михаил    | Хрипков      | Новосибирск     |
+| Ольга     | Черникова    | Самара          |
+| Максим    | Бахтерев     | Санкт-Петербург |
+| Екатерина | Попова       | Нижний Новгород |
+| Марина    | Свиридова    | Казань          |
+| Сергей    | Цурканов     | Казань          |
+| Алексей   | Суворов      | Санкт-Петербург |
+| Виталия   | Бредихина    | Пермь           |
+| Елена     | Бумакова     | Москва          |
+| Галина    | Максимова    | Уфа             |
+| Евгения   | Мельченко    | Самара          |
+| Татьяна   | Ситало       | Санкт-Петербург |
+| Ирина     | Анисимова    | Нижний Новгород |
+| Наталья   | Домарева     | Уфа             |
+| Ирина     | Сидельникова | Красноярск      |
+| Ираида    | Воронюк      | Москва          |
+| Юлия      | Азарова      | Казань          |
+| Мария     | Ефимова      | Казань          |
+| Юлия      | Кондратьева  | Уфа             |
+| Юлия      | Косарева     | Новосибирск     |
+| Ирина     | Лакомова     | Санкт-Петербург |
+| Анна      | Полуэктова   | Уфа             |
+| Юлия      | Максименко   | Новосибирск     |
+| Татьяна   | Асеева       | Волгоград       |
+| Екатерина | Шипилова     | Пермь           |
+| Елена     | Янкова       | Новосибирск     |
+| Евгений   | Красавин     | Ростов-на-Дону  |
+| Анна      | Яньшина      | Воронеж         |
+| Наталья   | Мироненко    | Екатеринбург    |
+| Людмила   | Дадонова     | Краснодар       |
+| Ольга     | Мордасова    | Краснодар       |
+| Елена     | Рыжкова      | Новосибирск     |
+| Екатерина | Богомолова   | Пермь           |
+| Марина    | Голощапова   | Москва          |
+| Инна      | Дибцева      | Ростов-на-Дону  |
+| Дмитрий   | Попов        | Ростов-на-Дону  |
+| Галина    | Рукавицына   | Новосибирск     |
+| Никита    | Рыкунов      | Москва          |
+| Анастасия | Рыкунова     | Красноярск      |
+| Юрий      | Саблин       | Тюмень          |
+| Алексей   | Самсонов     | Екатеринбург    |
+| Екатерина | Соколова     | Волгоград       |
+| Татьяна   | Афанасьева   | Москва          |
+| Дмитрий   | Древаль      | Краснодар       |
+| Максим    | Дубатовкин   | Москва          |
+| Сергей    | Простаков    | Воронеж         |
+| Александр | Пономарев    | Саратов         |
+| Андрей    | Косяков      | Казань          |
+| Дмитрий   | Косяков      | Краснодар       |
+| Людмила   | Скаба        | Воронеж         |
+| Дмитрий   | Смольянинов  | Тольятти        |
+| Вячеслав  | Допперт      | Тюмень          |
+| Елена     | Стрыгина     | Волгоград       |
+| Сергей    | Анисимов     | Саратов         |
+| Вячеслав  | Гамов        | Красноярск      |
+| Юрий      | Довка        | Саратов         |
+| Александр | Калинин      | Воронеж         |
+| Николай   | Пивоваров    | Краснодар       |
+| Алексей   | Тимошенко    | Саратов         |
+| Екатерина | Богомолова   | Тольятти        |
+| Марина    | Голощапова   | Екатеринбург    |
+| Инна      | Дибцева      | Волгоград       |
+| Дмитрий   | Попов        | Красноярск      |
+| Галина    | Рукавицына   | Челябинск       |
+| Никита    | Рыкунов      | Краснодар       |
+| Анастасия | Рыкунова     | Тюмень          |
+| Юрий      | Саблин       | Уфа             |
+| Алексей   | Самсонов     | Самара          |
+| Екатерина | Соколова     | Пермь           |
+| Татьяна   | Афанасьева   | Волгоград       |
+| Алексей   | Болгов       | Челябинск       |
+| Дмитрий   | Древаль      | Красноярск      |
+| Максим    | Дубоваткин   | Волгоград       |
+| Сергей    | Простаков    | Уфа             |
+| Александр | Пономарев    | Пермь           |
+| Максим    | Паршин       | Санкт-Петербург |
+| Алексей   | Петров       | Краснодар       |
+| Николай   | Сидоров      | Самара          |
+| Александр | Ворфоломеев  | Челябинск       |
+| Алексей   | Алехин       | Екатеринбург    |
+| Екатерина | Паршина      | Челябинск       |
+| Наталья   | Трубицына    | Москва          |
+| Екатерина | Паршина      | Челябинск       |
+| Евгения   | Кривцова     | Красноярск      |
+| Анастасия | Бурмистрова  | Уфа             |
+| Елена     | Воронова     | Тольятти        |
+| Наталья   | Заводскова   | Пермь           |
+| Сергей    | Воронин      | Тюмень          |
+| Юлия      | Баранова     | Челябинск       |
+| Марина    | Семикоз      | Самара          |
+| Андрей    | Буланый      | Казань          |
+| Мария     | Тафинцева    | Екатеринбург    |
+| Ольга     | Аксененкова  | Пермь           |
+| Виктория  | Лунева       | Уфа             |
+| Александр | Федоров      | Саратов         |
+| Ольга     | Щербинина    | Нижний Новгород |
++-----------+--------------+-----------------+
 
 select name,surname,hometown from users where hometown in ('Тольятти', 'Санкт-Петербург', 'Красноярск');
+
++-----------+--------------+-----------------+
+| name      | surname      | hometown        |
++-----------+--------------+-----------------+
+| Валерия   | Платошкина   | Красноярск      |
+| Елена     | Михайлова    | Красноярск      |
+| Любовь    | Чиликова     | Тольятти        |
+| Владимир  | Воробьев     | Красноярск      |
+| Максим    | Попов        | Санкт-Петербург |
+| Максим    | Бахтерев     | Санкт-Петербург |
+| Алексей   | Суворов      | Санкт-Петербург |
+| Татьяна   | Ситало       | Санкт-Петербург |
+| Ирина     | Сидельникова | Красноярск      |
+| Ирина     | Лакомова     | Санкт-Петербург |
+| Анастасия | Рыкунова     | Красноярск      |
+| Дмитрий   | Смольянинов  | Тольятти        |
+| Вячеслав  | Гамов        | Красноярск      |
+| Екатерина | Богомолова   | Тольятти        |
+| Дмитрий   | Попов        | Красноярск      |
+| Дмитрий   | Древаль      | Красноярск      |
+| Максим    | Паршин       | Санкт-Петербург |
+| Евгения   | Кривцова     | Красноярск      |
+| Елена     | Воронова     | Тольятти        |
++-----------+--------------+-----------------+
 
 select name,surname,hometown from users 
 	where hometown = 'Москва'
 	or hometown = 'Тольятти'
  	or hometown = 'Казань';
++-----------+-------------+----------+
+| name      | surname     | hometown |
++-----------+-------------+----------+
+| Ольга     | Кумачова    | Москва   |
+| Ольга     | Застрожнова | Москва   |
+| Анна      | Бавыкина    | Казань   |
+| Марина    | Киреева     | Казань   |
+| Любовь    | Чиликова    | Тольятти |
+| Маргарита | Овчинникова | Казань   |
+| Евгений   | Турбин      | Москва   |
+| Марина    | Свиридова   | Казань   |
+| Сергей    | Цурканов    | Казань   |
+| Елена     | Бумакова    | Москва   |
+| Ираида    | Воронюк     | Москва   |
+| Юлия      | Азарова     | Казань   |
+| Мария     | Ефимова     | Казань   |
+| Марина    | Голощапова  | Москва   |
+| Никита    | Рыкунов     | Москва   |
+| Татьяна   | Афанасьева  | Москва   |
+| Максим    | Дубатовкин  | Москва   |
+| Андрей    | Косяков     | Казань   |
+| Дмитрий   | Смольянинов | Тольятти |
+| Екатерина | Богомолова  | Тольятти |
+| Наталья   | Трубицына   | Москва   |
+| Елена     | Воронова    | Тольятти |
+| Андрей    | Буланый     | Казань   |
++-----------+-------------+----------+
 
 select name,surname,hometown, gender from users 
 	where (hometown = 'Красноярск' or hometown ='Тольятти') and gender='f';
++-----------+--------------+------------+--------+
+| name      | surname      | hometown   | gender |
++-----------+--------------+------------+--------+
+| Валерия   | Платошкина   | Красноярск | f      |
+| Елена     | Михайлова    | Красноярск | f      |
+| Любовь    | Чиликова     | Тольятти   | f      |
+| Ирина     | Сидельникова | Красноярск | f      |
+| Анастасия | Рыкунова     | Красноярск | f      |
+| Екатерина | Богомолова   | Тольятти   | f      |
+| Евгения   | Кривцова     | Красноярск | f      |
+| Елена     | Воронова     | Тольятти   | f      |
++-----------+--------------+------------+--------+
 
 select name,surname from users where surname like 'Бе%';
+
++---------+-----------+
+| name    | surname   |
++---------+-----------+
+| Эльвира | Белоусова |
++---------+-----------+
+
 select name,surname from users where surname like '%ва';
++-----------+--------------+
+| name      | surname      |
++-----------+--------------+
+| Алиса     | Зайцева      |
+| Алла      | Толмачева    |
+| Анастасия | Бурмистрова  |
+| Анастасия | Рыкунова     |
+| Анастасия | Рыкунова     |
+| Анна      | Колтакова    |
+| Анна      | Полуэктова   |
+| Виктория  | Лунева       |
+| Галина    | Максимова    |
+| Дарья     | Попова       |
+| Евгения   | Кривцова     |
+| Екатерина | Богомолова   |
+| Екатерина | Богомолова   |
+| Екатерина | Власова      |
+| Екатерина | Попова       |
+| Екатерина | Соколова     |
+| Екатерина | Соколова     |
+| Екатерина | Шипилова     |
+| Елена     | Бумакова     |
+| Елена     | Воронова     |
+| Елена     | Михайлова    |
+| Елена     | Рыжкова      |
+| Елена     | Селиванова   |
+| Елена     | Янкова       |
+| Инна      | Дибцева      |
+| Инна      | Дибцева      |
+| Ирина     | Анисимова    |
+| Ирина     | Гончарова    |
+| Ирина     | Лакомова     |
+| Ирина     | Сидельникова |
+| Ирина     | Сушкова      |
+| Ирина     | Черникова    |
+| Любовь    | Чиликова     |
+| Людмила   | Дадонова     |
+| Маргарита | Овчинникова  |
+| Марина    | Голощапова   |
+| Марина    | Голощапова   |
+| Марина    | Закусилова   |
+| Марина    | Киреева      |
+| Марина    | Свиридова    |
+| Мария     | Ефимова      |
+| Мария     | Тафинцева    |
+| Наталья   | Домарева     |
+| Наталья   | Заводскова   |
+| Ольга     | Аксененкова  |
+| Ольга     | Застрожнова  |
+| Ольга     | Кумачова     |
+| Ольга     | Лохмачева    |
+| Ольга     | Мордасова    |
+| Ольга     | Черникова    |
+| Татьяна   | Асеева       |
+| Татьяна   | Афанасьева   |
+| Татьяна   | Афанасьева   |
+| Татьяна   | Переславцева |
+| Эльвира   | Белоусова    |
+| Юлия      | Азарова      |
+| Юлия      | Баранова     |
+| Юлия      | Кондратьева  |
+| Юлия      | Косарева     |
++-----------+--------------+
 select name,surname from users where surname like 'Бе_ва';
+Empty set (0.00 sec)
 
 select count(*) from users;
++----------+
+| count(*) |
++----------+
+|      140 |
++----------+
 select min(birthday) from users;
++---------------+
+| min(birthday) |
++---------------+
+| 1977-01-04    |
++---------------+
 
 select gender, count(*) from users group by gender;
++--------+----------+
+| gender | count(*) |
++--------+----------+
+| f      |       83 |
+| m      |       57 |
++--------+----------+
 
 select gender, count(*) from users group by gender having count(*) >=10;
++--------+----------+
+| gender | count(*) |
++--------+----------+
+| f      |       83 |
+| m      |       57 |
++--------+----------+
 
-select * from friend_requests where initiator_user_id = 77;
+select * from friend_requests where initiator_user_id = 1;
+Empty set (0.00 sec)
 
 -- UPDATE 
 update friend_requests 
