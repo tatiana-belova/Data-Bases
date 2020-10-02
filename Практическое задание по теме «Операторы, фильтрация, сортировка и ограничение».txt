@@ -1,0 +1,211 @@
+Задание 1. Пусть в таблице users поля created_at и updated_at оказались незаполненными. Заполните их текущими датой и временем.
+
+mysql> CREATE TABLE users (
+    -> id SERIAL PRIMARY KEY,
+    -> name VARCHAR(255) COMMENT 'Имя покупателя',
+    -> birthday_at DATE COMMENT 'Дата рождения',
+    -> created_at DATETIME,
+    -> updated_at DATETIME
+    -> ) COMMENT = 'Покупатели';
+Query OK, 0 rows affected (0,01 sec)
+
+mysq1> INSERT INTO
+-> users (name, birthday_at, created_at, updated_at)
+-> VALUES
+-> ('Jim', '1980-11-15', NULL, NULL),
+-> ('Helen', '1994-01-02', NULL, NULL),
+-> ('John', '1995-07-19', NULL, NULL),
+-> ('Mary', '1998-09-17', NULL, NULL),
+-> ('Seamus', '1989-12-30', NULL, NULL),
+-> ('Sinead', '1990-03-29', NULL, NULL);
+Query OK, 6 rows affected (0,00 sec) 
+Records: 6 Duplicates: 0 Warnings: 0
+
+mysq1> SELECT * FROM users;
+
++----+ -------------------- + ----------- + ---------- + ---------- +
+| id | name                 | birthday_at | created_at | updated_at |
++----+ -------------------- + ----------- + ---------- + ---------- +
+|  1 | Jim                  | 1980-11-15  | NULL       |NULL        |
+|  2 | Helen                | 1994-01-02  | NULL       |NULL        |
+|  3 | John                 | 1995-07-19  | NULL       |NULL        |
+|  4 | Mary                 | 1998-09-17  | NULL       |NULL        |
+|  5 | Seamus               | 1989-12-30  | NULL       |NULL        |
+|  6 | Sinead               | 1990-03-29  | NULL       |NULL        |
++----+ -------------------- + ----------- + ---------- + ---------- +
+
+6 rows in set (0,01 sec)
+
+mysq1> UPDATE users SET created_at = NOW(), updated_at = NOW();
+Query OK, 6 rows affected (0,00 sec)
+Rows matched: 6 Changed: 6 Warnings: 0
+
+mysq1> SELECT * FROM users;
++----+ -------------------- + ----------- + ------------------- + ------------------- +
+| id | name                 | birthday_at | created_at          | updated_at          |
++----+ -------------------- + ----------- + ------------------- + ------------------- +
+|  1 | Jim                  | 1980-11-15  | 2020-10-01 13:35:57 | 2020-10-01 13:35:57 |
+|  2 | Helen                | 1994-01-02  | 2020-10-01 13:35:57 | 2020-10-01 13:35:57 |
+|  3 | John                 | 1995-07-19  | 2020-10-01 13:35:57 | 2020-10-01 13:35:57 |
+|  4 | Mary                 | 1998-09-17  | 2020-10-01 13:35:57 | 2020-10-01 13:35:57 |
+|  5 | Seamus               | 1989-12-30  | 2020-10-01 13:35:57 | 2020-10-01 13:35:57 |
+|  6 | Sinead               | 1990-03-29  | 2020-10-01 13:35:57 | 2020-10-01 13:35:57 |
++----+ -------------------- + ----------- + ------------------- + ------------------- +
+
+Задание 2. Таблица users была неудачно спроектирована. Записи created_at и updated_at были заданы типом VARCHAR и в них долгое время помещались значения в формате 20.10.2017 8:10. Необходимо преобразовать поля к типу DATETIME, сохранив введённые ранее значения.
+
+mysql> CREATE TABLE users (
+    -> id SERIAL PRIMARY KEY,
+    -> name VARCHAR(255) COMMENT 'Имя покупателя',
+    -> birthday_at DATE COMMENT 'Дата рождения',
+    -> created_at VARCHAR(255),
+    -> updated_at VARCHAR(255)
+    -> ) COMMENT = 'Покупатели';
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> INSERT INTO
+    -> users (name, birthday_at, created_at, updated_at)
+    -> VALUES
+    -> ('Jim', '1980-11-15', '20.08.2018 4:07', '20.08.2018 4:07'),
+    -> ('Helen', '1994-01-02', '30.12.2019 14:23', '30.12.2019 14:23'),
+    -> ('John', '1995-07-19', '14.01.2018 23:48', '14.01.2018 23:48'),
+    -> ('Mary', '1998-09-17', '25.03.2019 17:32', '25.03.2019 17:32'),
+    -> ('Seamus', '1989-12-30', '09.07.2019 6:07', '09.07.2019 6:07'),
+    -> ('Sinead', '1990-03-29', '05.10.2018 10:53', '05.10.2018 10:53');
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> select str_to_date(created_at, '%d.%m.%Y %k:%i') from users;
++-------------------------------------------+
+| str_to_date(created_at, '%d.%m.%Y %k:%i') |
++-------------------------------------------+
+| 2018-08-20 04:07:00                       |
+| 2019-12-30 14:23:00                       |
+| 2018-01-14 23:48:00                       |
+| 2019-03-25 17:32:00                       |
+| 2019-07-09 06:07:00                       |
+| 2018-10-05 10:53:00                       |
++-------------------------------------------+
+6 rows in set (0.00 sec)
+
+mysql> update
+    -> users
+    -> SET
+    -> created_at = str_to_date(created_at, '%d.%m.%Y %k:%i'),
+    -> updated_at = str_to_date(updated_at, '%d.%m.%Y %k:%i');
+Query OK, 6 rows affected (0.00 sec)
+Rows matched: 6  Changed: 6  Warnings: 0
+
+mysql> select * from users;
++----+--------+-------------+---------------------+---------------------+
+| id | name   | birthday_at | created_at          | updated_at          |
++----+--------+-------------+---------------------+---------------------+
+|  1 | Jim    | 1980-11-15  | 2018-08-20 04:07:00 | 2018-08-20 04:07:00 |
+|  2 | Helen  | 1994-01-02  | 2019-12-30 14:23:00 | 2019-12-30 14:23:00 |
+|  3 | John   | 1995-07-19  | 2018-01-14 23:48:00 | 2018-01-14 23:48:00 |
+|  4 | Mary   | 1998-09-17  | 2019-03-25 17:32:00 | 2019-03-25 17:32:00 |
+|  5 | Seamus | 1989-12-30  | 2019-07-09 06:07:00 | 2019-07-09 06:07:00 |
+|  6 | Sinead | 1990-03-29  | 2018-10-05 10:53:00 | 2018-10-05 10:53:00 |
++----+--------+-------------+---------------------+---------------------+
+6 rows in set (0.00 sec)
+
+mysql> describe users;
++-------------+-----------------+------+-----+---------+----------------+
+| Field       | Type            | Null | Key | Default | Extra          |
++-------------+-----------------+------+-----+---------+----------------+
+| id          | bigint unsigned | NO   | PRI | NULL    | auto_increment |
+| name        | varchar(255)    | YES  |     | NULL    |                |
+| birthday_at | date            | YES  |     | NULL    |                |
+| created_at  | varchar(255)    | YES  |     | NULL    |                |
+| updated_at  | varchar(255)    | YES  |     | NULL    |                |
++-------------+-----------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+mysql> alter table
+    -> users
+    -> change
+    -> created_at created_at datetime default current_timestamp;
+Query OK, 6 rows affected (0.10 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> alter table
+    -> users
+    -> change
+    -> updated_at updated_at datetime default current_timestamp;
+Query OK, 6 rows affected (0.14 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> describe users;
++-------------+-----------------+------+-----+-------------------+-------------------+
+| Field       | Type            | Null | Key | Default           | Extra             |
++-------------+-----------------+------+-----+-------------------+-------------------+
+| id          | bigint unsigned | NO   | PRI | NULL              | auto_increment    |
+| name        | varchar(255)    | YES  |     | NULL              |                   |
+| birthday_at | date            | YES  |     | NULL              |                   |
+| created_at  | datetime        | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+| updated_at  | datetime        | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++-------------+-----------------+------+-----+-------------------+-------------------+
+5 rows in set (0.00 sec)
+
+Задание 3. В таблице складских запасов storehouses_products в поле value могут встречаться самые разные цифры: 0, если товар закончился и выше нуля, если на складе имеются запасы. Необходимо отсортировать записи таким образом, чтобы они выводились в порядке увеличения значения value. Однако нулевые запасы должны выводиться в конце, после всех записей.
+
+mysql> CREATE TABLE storehouses_products (
+    -> id SERIAL PRIMARY KEY,
+    -> storehouse_id INT UNSIGNED,
+    -> product_id INT UNSIGNED,
+    -> value INT UNSIGNED COMMENT 'Запас товарной позиции на складе',
+    -> created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    -> updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    -> ) COMMENT = 'Запасы на складе';
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> INSERT INTO
+    -> storehouses_products (storehouse_id, product_id, value)
+    -> VALUES
+    -> (1, 324, 0),
+    -> (1, 5645, 2500),
+    -> (1, 565, 0),
+    -> (1, 784, 30),
+    -> (1, 213, 500),
+    -> (1, 789, 1);
+Query OK, 6 rows affected (0.01 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> select * from storehouses_products order by value;
++----+---------------+------------+-------+---------------------+---------------------+
+| id | storehouse_id | product_id | value | created_at          | updated_at          |
++----+---------------+------------+-------+---------------------+---------------------+
+|  1 |             1 |        324 |     0 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  3 |             1 |        565 |     0 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  6 |             1 |        789 |     1 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  4 |             1 |        784 |    30 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  5 |             1 |        213 |   500 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  2 |             1 |       5645 |  2500 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
++----+---------------+------------+-------+---------------------+---------------------+
+6 rows in set (0.00 sec)
+
+mysql> select id, value, if(value > 0, 0, 1) as sort from storehouses_products order by value;
++----+-------+------+
+| id | value | sort |
++----+-------+------+
+|  1 |     0 |    1 |
+|  3 |     0 |    1 |
+|  6 |     1 |    0 |
+|  4 |    30 |    0 |
+|  5 |   500 |    0 |
+|  2 |  2500 |    0 |
++----+-------+------+
+6 rows in set (0.00 sec)
+
+mysql> select * from storehouses_products order by if(value > 0, 0, 1), value;
++----+---------------+------------+-------+---------------------+---------------------+
+| id | storehouse_id | product_id | value | created_at          | updated_at          |
++----+---------------+------------+-------+---------------------+---------------------+
+|  6 |             1 |        789 |     1 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  4 |             1 |        784 |    30 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  5 |             1 |        213 |   500 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  2 |             1 |       5645 |  2500 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  1 |             1 |        324 |     0 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
+|  3 |             1 |        565 |     0 | 2020-10-02 11:57:54 | 2020-10-02 11:57:54 |
++----+---------------+------------+-------+---------------------+---------------------+
+6 rows in set (0.00 sec)
