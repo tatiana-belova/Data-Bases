@@ -2538,18 +2538,230 @@ select gender, count(*) from users group by gender having count(*) >=10;
 +--------+----------+
 
 select * from friend_requests where initiator_user_id = 1;
-Empty set (0.00 sec)
++-------------------+----------------+------------+---------------------+---------------------+
+| initiator_user_id | target_user_id | status     | requested_at        | confirmed_at        |
++-------------------+----------------+------------+---------------------+---------------------+
+|                 1 |            100 | unfriended | 2020-02-23 07:38:51 | 1985-08-07 02:25:47 |
++-------------------+----------------+------------+---------------------+---------------------+
 
 -- UPDATE 
 update friend_requests 
 	set status = 'unfriended'
 	where initiator_user_id = 41 and target_user_id = 59;
+	Query OK, 1 row affected (0.00 sec)
+	Rows matched: 1  Changed: 1  Warnings: 0
+|                41 |             59 | unfriended | 2009-12-29 19:16:08 | 2020-10-02 13:12:14 |
     
 	
 -- TRUCATE 
 delete from communities where name = 'R%';
 delete from communities where id between 5 and 21;
-delete from communities;
+
++-----+----------------------------------------------------------+
+| id  | name                                                     |
++-----+----------------------------------------------------------+
+|   9 | autem                                                    |
+|  75 | Automated 4thgeneration matrix                           |
+| 101 | Automated 4thgeneration matrix                           |
+| 102 | Business-focused object-oriented implementation          |
+|  58 | Centralized high-level hub                               |
+| 103 | Centralized high-level hub                               |
+|  41 | Centralized radical complexity                           |
+| 104 | Centralized radical complexity                           |
+|  51 | Cloned exuding time-frame                                |
+| 105 | Cloned exuding time-frame                                |
+| 106 | Configurable object-oriented task-force                  |
+|  63 | Cross-group value-added alliance                         |
+| 107 | Cross-group value-added alliance                         |
+|  55 | Cross-platform fault-tolerant framework                  |
+| 108 | Cross-platform fault-tolerant framework                  |
+|  24 | Customer-focused systematic solution                     |
+| 109 | Customer-focused systematic solution                     |
+|  53 | De-engineered exuding info-mediaries                     |
+| 110 | De-engineered exuding info-mediaries                     |
+|  40 | Decentralized zerotolerance analyzer                     |
+| 111 | Decentralized zerotolerance analyzer                     |
+|  12 | dicta                                                    |
+|  42 | Distributed multi-tasking circuit                        |
+| 112 | Distributed multi-tasking circuit                        |
+| 113 | Distributed responsive extranet                          |
+|  59 | Diverse foreground hub                                   |
+| 114 | Diverse foreground hub                                   |
+|  60 | Diverse radical ability                                  |
+| 115 | Diverse radical ability                                  |
+|  22 | Diverse systematic structure                             |
+| 116 | Diverse systematic structure                             |
+|  94 | Down-sized mobile matrices                               |
+| 117 | Down-sized mobile matrices                               |
+| 100 | Down-sized non-volatile focusgroup                       |
+| 118 | Down-sized non-volatile focusgroup                       |
+|  79 | Enhanced 4thgeneration workforce                         |
+| 119 | Enhanced 4thgeneration workforce                         |
+|  13 | enim                                                     |
+|  84 | Enterprise-wide 24hour instructionset                    |
+| 120 | Enterprise-wide 24hour instructionset                    |
+|  86 | Enterprise-wide client-server utilisation                |
+| 121 | Enterprise-wide client-server utilisation                |
+|  65 | Enterprise-wide stable attitude                          |
+| 122 | Enterprise-wide stable attitude                          |
+|  16 | eos                                                      |
+|  15 | et                                                       |
+|  26 | Expanded logistical hierarchy                            |
+| 123 | Expanded logistical hierarchy                            |
+|  89 | Expanded responsive groupware                            |
+| 124 | Expanded responsive groupware                            |
+|  14 | explicabo                                                |
+|  31 | Extended clear-thinking collaboration                    |
+| 125 | Extended clear-thinking collaboration                    |
+|  68 | Extended dedicated access                                |
+| 126 | Extended dedicated access                                |
+|  88 | Extended local GraphicInterface                          |
+| 127 | Extended local GraphicInterface                          |
+|  52 | Facetoface web-enabled moderator                         |
+| 128 | Facetoface web-enabled moderator                         |
+|  62 | Front-line discrete product                              |
+| 129 | Front-line discrete product                              |
+|  73 | Front-line maximized localareanetwork                    |
+| 130 | Front-line maximized localareanetwork                    |
+|  17 | fugiat                                                   |
+|  44 | Fully-configurable responsive moratorium                 |
+| 131 | Fully-configurable responsive moratorium                 |
+|  30 | Fully-configurable tangible implementation               |
+| 132 | Fully-configurable tangible implementation               |
+|  97 | Function-based 5thgeneration model                       |
+| 133 | Function-based 5thgeneration model                       |
+|  72 | Function-based contextually-based challenge              |
+| 134 | Function-based contextually-based challenge              |
+|  43 | Fundamental interactive contingency                      |
+| 135 | Fundamental interactive contingency                      |
+|  71 | Future-proofed intermediate framework                    |
+| 136 | Future-proofed intermediate framework                    |
+|   4 | Grass-roots background focusgroup                        |
+| 137 | Grass-roots background focusgroup                        |
+| 138 | Grass-roots neutral forecast                             |
+|  35 | Grass-roots optimizing strategy                          |
+| 139 | Grass-roots optimizing strategy                          |
+|  81 | Grass-roots zeroadministration systemengine              |
+| 140 | Grass-roots zeroadministration systemengine              |
+|  99 | Innovative radical function                              |
+| 141 | Innovative radical function                              |
+|  34 | Intuitive intangible analyzer                            |
+| 142 | Intuitive intangible analyzer                            |
+|  46 | Intuitive needs-based migration                          |
+| 143 | Intuitive needs-based migration                          |
+|  61 | Inverse multimedia product                               |
+| 144 | Inverse multimedia product                               |
+|  18 | magni                                                    |
+|  25 | Managed actuating groupware                              |
+| 145 | Managed actuating groupware                              |
+|  28 | Mandatory motivating customerloyalty                     |
+| 146 | Mandatory motivating customerloyalty                     |
+|   5 | molestias                                                |
+|  56 | Multi-channelled 24/7 protocol                           |
+| 147 | Multi-channelled 24/7 protocol                           |
+|  29 | Multi-channelled methodical firmware                     |
+| 148 | Multi-channelled methodical firmware                     |
+|  64 | Multi-lateral explicit policy                            |
+| 149 | Multi-lateral explicit policy                            |
+|  67 | Multi-layered bifurcated solution                        |
+| 150 | Multi-layered bifurcated solution                        |
+| 151 | Multi-layered explicit systemengine                      |
+|  32 | Multi-layered value-added installation                   |
+| 152 | Multi-layered value-added installation                   |
+|  23 | Networked multimedia artificialintelligence              |
+| 153 | Networked multimedia artificialintelligence              |
+|  19 | nostrum                                                  |
+|   6 | nulla                                                    |
+| 154 | Open-architected executive project                       |
+|  33 | Open-architected mission-critical GraphicalUserInterface |
+| 155 | Open-architected mission-critical GraphicalUserInterface |
+|  98 | Operative bifurcated array                               |
+| 156 | Operative bifurcated array                               |
+|  45 | Operative zeroadministration orchestration               |
+| 157 | Operative zeroadministration orchestration               |
+|  87 | Optional content-based firmware                          |
+| 158 | Optional content-based firmware                          |
+|   7 | perferendis                                              |
+|  93 | Persevering 3rdgeneration forecast                       |
+| 159 | Persevering 3rdgeneration forecast                       |
+| 160 | Persistent regional product                              |
+|  21 | perspiciatis                                             |
+| 161 | Phased value-added time-frame                            |
+| 162 | Polarised encompassing firmware                          |
+|  70 | Polarised grid-enabled interface                         |
+| 163 | Polarised grid-enabled interface                         |
+|  78 | Polarised mission-critical conglomeration                |
+| 164 | Polarised mission-critical conglomeration                |
+|  77 | Pre-emptive contextually-based flexibility               |
+| 165 | Pre-emptive contextually-based flexibility               |
+|  27 | Pre-emptive hybrid utilisation                           |
+| 166 | Pre-emptive hybrid utilisation                           |
+|   3 | Profit-focused background throughput                     |
+| 167 | Profit-focused background throughput                     |
+|  80 | Programmable bandwidth-monitored access                  |
+| 168 | Programmable bandwidth-monitored access                  |
+|  83 | Programmable zerotolerance extranet                      |
+| 169 | Programmable zerotolerance extranet                      |
+|  54 | Public-key grid-enabled customerloyalty                  |
+| 170 | Public-key grid-enabled customerloyalty                  |
+|  49 | Public-key grid-enabled structure                        |
+| 171 | Public-key grid-enabled structure                        |
+| 172 | Public-key radical interface                             |
+|   1 | Quality-focused non-volatile core                        |
+| 173 | Quality-focused non-volatile core                        |
+|  20 | qui                                                      |
+|   8 | quo                                                      |
+|   2 | Re-contextualized eco-centric extranet                   |
+| 174 | Re-contextualized eco-centric extranet                   |
+|  76 | Re-contextualized systemic benchmark                     |
+| 175 | Re-contextualized systemic benchmark                     |
+| 176 | Re-contextualized uniform capability                     |
+|  47 | Re-engineered solution-oriented projection               |
+| 177 | Re-engineered solution-oriented projection               |
+|  82 | Reactive 5thgeneration standardization                   |
+| 178 | Reactive 5thgeneration standardization                   |
+|  39 | Reactive leadingedge flexibility                         |
+| 179 | Reactive leadingedge flexibility                         |
+| 180 | Reactive multi-state function                            |
+|  66 | Reverse-engineered solution-oriented functionalities     |
+| 181 | Reverse-engineered solution-oriented functionalities     |
+| 182 | Right-sized 5thgeneration definition                     |
+|  38 | Right-sized clear-thinking hub                           |
+| 183 | Right-sized clear-thinking hub                           |
+|  96 | Robust global approach                                   |
+| 184 | Robust global approach                                   |
+|  95 | Secured cohesive GraphicInterface                        |
+| 185 | Secured cohesive GraphicInterface                        |
+|  48 | Secured encompassing support                             |
+| 186 | Secured encompassing support                             |
+|  69 | Secured high-level systemengine                          |
+| 187 | Secured high-level systemengine                          |
+|  90 | Streamlined well-modulated customerloyalty               |
+| 188 | Streamlined well-modulated customerloyalty               |
+|  85 | Synergistic background model                             |
+| 189 | Synergistic background model                             |
+|  57 | Synergistic didactic time-frame                          |
+| 190 | Synergistic didactic time-frame                          |
+| 191 | Synergized explicit workforce                            |
+|  50 | Synergized fresh-thinking methodology                    |
+| 192 | Synergized fresh-thinking methodology                    |
+|  92 | Synergized heuristic customerloyalty                     |
+| 193 | Synergized heuristic customerloyalty                     |
+|  11 | tempore                                                  |
+|  10 | ullam                                                    |
+| 194 | Up-sized bi-directional encryption                       |
+|  37 | Up-sized impactful analyzer                              |
+| 195 | Up-sized impactful analyzer                              |
+|  36 | Up-sized intermediate algorithm                          |
+| 196 | Up-sized intermediate algorithm                          |
+| 197 | User-centric demand-driven task-force                    |
+|  74 | Virtual executive matrix                                 |
+| 198 | Virtual executive matrix                                 |
+|  91 | Vision-oriented optimal customerloyalty                  |
+| 199 | Vision-oriented optimal customerloyalty                  |
+| 200 | Visionary intermediate focusgroup                        |
++-----+----------------------------------------------------------+
+
 
 set foreign_key_checks = 0; 
 truncate table posts;
