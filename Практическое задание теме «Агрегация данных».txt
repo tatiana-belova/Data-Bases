@@ -1,0 +1,147 @@
+Задание 1. Подсчитайте средний возраст пользователей в таблице users.
+mysql> select
+    -> timestampdiff(YEAR, birthday_at, NOW()) as age
+    -> from
+    -> users;
++------+
+| age  |
++------+
+|   39 |
+|   26 |
+|   25 |
+|   22 |
+|   30 |
+|   30 |
++------+
+6 rows in set (0.00 sec)
+
+mysql> select
+    -> avg(timestampdiff(YEAR, birthday_at, NOW())) as age
+    -> from
+    -> users;
++---------+
+| age     |
++---------+
+| 28.6667 |
++---------+
+1 row in set (0.00 sec)
+
+Задание 2. Подсчитайте количество дней рождения, которые приходятся на каждый из дней недели. Следует учесть, что необходимы дни недели текущего года, а не года рождения.
+
+mysql> select name, birthday_at from users;
++--------+-------------+
+| name   | birthday_at |
++--------+-------------+
+| Jim    | 1980-11-15  |
+| Helen  | 1994-01-02  |
+| John   | 1995-07-19  |
+| Mary   | 1998-09-17  |
+| Seamus | 1989-12-30  |
+| Sinead | 1990-03-29  |
++--------+-------------+
+6 rows in set (0.00 sec)
+
+mysql> select month(birthday_at), day(birthday_at) from users;
++--------------------+------------------+
+| month(birthday_at) | day(birthday_at) |
++--------------------+------------------+
+|                 11 |               15 |
+|                  1 |                2 |
+|                  7 |               19 |
+|                  9 |               17 |
+|                 12 |               30 |
+|                  3 |               29 |
++--------------------+------------------+
+6 rows in set (0.00 sec)
+
+mysql> select year(now()),  month(birthday_at), day(birthday_at) from users;
++-------------+--------------------+------------------+
+| year(now()) | month(birthday_at) | day(birthday_at) |
++-------------+--------------------+------------------+
+|        2020 |                 11 |               15 |
+|        2020 |                  1 |                2 |
+|        2020 |                  7 |               19 |
+|        2020 |                  9 |               17 |
+|        2020 |                 12 |               30 |
+|        2020 |                  3 |               29 |
++-------------+--------------------+------------------+
+6 rows in set (0.00 sec)
+
+mysql> select concat_ws('-', year(now()),  month(birthday_at), day(birthday_at)) as day from users;
++------------+
+| day        |
++------------+
+| 2020-11-15 |
+| 2020-1-2   |
+| 2020-7-19  |
+| 2020-9-17  |
+| 2020-12-30 |
+| 2020-3-29  |
++------------+
+6 rows in set (0.00 sec)
+
+mysql> select day(concat_ws('-', year(now()),  month(birthday_at), day(birthday_at))) as day from users;
++------+
+| day  |
++------+
+|   15 |
+|    2 |
+|   19 |
+|   17 |
+|   30 |
+|   29 |
++------+
+6 rows in set (0.00 sec)
+
+mysql> select date(concat_ws('-', year(now()),  month(birthday_at), day(birthday_at))) as day from users;
++------------+
+| day        |
++------------+
+| 2020-11-15 |
+| 2020-01-02 |
+| 2020-07-19 |
+| 2020-09-17 |
+| 2020-12-30 |
+| 2020-03-29 |
++------------+
+6 rows in set (0.00 sec)
+
+mysql> select
+    -> date_format(date(concat_ws('-', year(now()),  month(birthday_at), day(birthday_at))),'%W') as day from users;
++-----------+
+| day       |
++-----------+
+| Sunday    |
+| Thursday  |
+| Sunday    |
+| Thursday  |
+| Wednesday |
+| Sunday    |
++-----------+
+6 rows in set (0.00 sec)
+
+mysql> select
+    -> date_format(date(concat_ws('-', year(now()),  month(birthday_at), day(birthday_at))),'%W') as day from users group by day;
++-----------+
+| day       |
++-----------+
+| Sunday    |
+| Thursday  |
+| Wednesday |
++-----------+
+3 rows in set (0.00 sec)
+
+
+mysql> select
+    -> date_format(date(concat_ws('-', year(now()),  month(birthday_at), day(birthday_at))),'%W') as day,
+    -> count(*) as total
+    -> from users
+    -> group by day;
++-----------+-------+
+| day       | total |
++-----------+-------+
+| Sunday    |     3 |
+| Thursday  |     2 |
+| Wednesday |     1 |
++-----------+-------+
+3 rows in set (0.00 sec)
