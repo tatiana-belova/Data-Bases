@@ -1,3 +1,5 @@
+Практическое задание по теме “Оптимизация запросов”
+
 DROP TABLE IF EXISTS logs;
 
 CREATE TABLE logs (
